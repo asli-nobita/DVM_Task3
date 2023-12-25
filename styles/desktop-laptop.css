@@ -1,0 +1,106 @@
+@import url('fonts.css');
+
+/* large screens */
+@media screen and (min-width: 768px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    :root {
+        --link-color: rgb(4, 199, 92);
+        --color-off-white: #FAF9F7;
+    }
+
+    body {
+        font-family: "Armin Grotesk", 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 16px;
+        padding: 0 3rem;
+        background-color: var(--color-off-white);
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul, ol {
+        list-style-type: none;
+    }
+
+    header {
+        font-size: 20px;
+        padding: 2rem 5rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    #burger-menu {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    #burger-icon::before {
+        content: "";
+        border-top: 2px solid black;
+        border-bottom: 2px solid black; 
+        /* height: 75%;
+        width: 75%; */
+    }
+
+    #burger-icon::after {
+        content: "";
+        border-top: 2px solid black;
+        border-bottom: 2px solid black; 
+    }
+
+    #nav-options {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10rem;
+    }
+
+    #donate-btn {
+        background: transparent;
+        border-radius: 2rem;
+        padding: 0.5rem 2rem;
+        font-size: 20px;
+        border: 1px solid black;
+        transition: 0.2s ease;
+    }
+
+    #donate-btn:hover {
+        background-color: var(--link-color);
+        border-color: var(--link-color);
+        color: white;
+        transition: 0.2s ease;
+    }
+
+    #lang-options {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    #lang-options a {
+        transition: 0.2s ease;
+    }
+
+    #lang-options a:hover {
+        color: var(--link-color);
+        transition: 0.2s ease;
+    }
+
+    .hero {
+        font-size: 3rem;
+    }
+}

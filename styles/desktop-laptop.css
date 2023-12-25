@@ -11,6 +11,7 @@
     :root {
         --link-color: rgb(4, 199, 92);
         --color-off-white: #FAF9F7;
+        --margin-left: 4rem;
     }
 
     body {
@@ -101,6 +102,47 @@
     }
 
     .hero {
-        font-size: 3rem;
+        font-size: 4rem;
+        width: 40%;
+        margin-left: var(--margin-left);
+        line-height: 0.9;
+        z-index: -1;
+        position: absolute;
+    }
+
+    .carousel-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: translateY(30%);
+    }
+
+    #carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-text {
+        font-size: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 1.5rem;
+    }
+
+    .carousel-text a {
+        font-size: 2rem;
+        color: var(--link-color);
+        transition: 0.1s ease;
+    }
+
+    .carousel-text a:hover {
+        color: black;
+        transition: 0.1s ease;
+    }
+
+    .carousel-img {
+        width: 70%;
     }
 }

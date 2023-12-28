@@ -2,4 +2,4 @@
 Cloning the website [https://railpark.org](https://railpark.org)
 
 ### Learning objectives  
-    * Animations and visual effects using **plain CSS and JavaScript**
+* Animations and visual effects using **plain CSS and JavaScript**

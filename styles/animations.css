@@ -1,0 +1,38 @@
+@media (prefers-reduced-motion: no-preference) {
+    /* hero fade animation  */
+
+    /* carousel-load-animation */
+    @keyframes swingIn {
+        from {
+            transform: rotate(20deg);
+            opacity: 0.1;
+        }
+        to {
+            transform: rotate(0);
+            opacity: 1;
+        }
+    }
+
+    /* fade-in animation  */
+    @keyframes fadeIn {
+        from {
+            transform: translateY(15%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* video hover effect */
+    @keyframes playVideo {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+}

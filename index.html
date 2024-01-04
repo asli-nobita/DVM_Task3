@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/smartphones.css">
+    <link rel="stylesheet" href="styles/tablets.css">
     <link rel="stylesheet" href="styles/desktop-laptop.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet"
@@ -22,7 +23,7 @@
         <header id="header-large">
             <nav class="navbar" id="nav-large">
                 <div id="burger-menu">
-                    <div id="burger-icon">
+                    <div class="burger-menu-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                             viewBox="0 0 50 50">
                             <path
@@ -56,11 +57,167 @@
                 </div>
             </nav>
         </header>
+
+        <section id="desktop-menu" class="menu">
+            <nav id="menu-navbar">
+                <div class="close-btn burger-menu-icon">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+                <div class="search-bar">
+                    <div class="search-icon">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+                <div id="menu-donate-btn" class="btn">
+                    DONATE
+                </div>
+            </nav>
+            <div class="menu-grid">
+                <div class="menu-grid-col">
+                    <ul id="menu-options">
+                        <li>HOME</li>
+                        <li>MEMBERSHIP</li>
+                        <li>RESOURCES</li>
+                        <li>NEWS</li>
+                        <li>ABOUT</li>
+                        <li>BOOK A TOUR</li>
+                        <li>SHOP</li>
+                    </ul>
+                    <div class="logo">
+                        <svg width="50" height="55" viewBox="0 0 50 55" xmlns="http://www.w3.org/2000/svg" fill="white"
+                            class="Logo__LogoWrapper-sc-82qk6d-0 cFSmHA">
+                            <title>Rail Park Logo</title>
+                            <path
+                                d="M50 24.1047C50 32.5791 46.255 38.7366 41.06 42.4337L37.8017 32.9445L41.7965 32.9511L40.2512 29.3159L36.5555 29.3127L33.6029 20.7209L36.5983 20.7241L35.362 17.8167L32.6034 17.8134L30.2788 11.0424L32.4818 11.0457L31.6565 9.10739L29.6114 9.10412L26.4977 0.0391575C32.1825 0.300208 37.2986 2.01661 41.0732 4.66301C46.3602 8.17413 50 15.5586 50 24.1047ZM9.35425 29.2768L13.0664 29.28L16.1011 20.6947L13.017 20.6915L14.2566 17.7873L17.1303 17.7906L19.5239 11.0261L17.1467 11.0228L17.972 9.08781L20.2078 9.09107L23.4103 0.0391575C13.6779 0.512311 4.82015 5.33521 1.50589 14.906C0.48333 17.8558 0 20.9852 0 24.1047C0 32.3506 3.52798 38.4592 8.50266 42.1824L11.7808 32.9119L7.80562 32.9054L9.35425 29.2768ZM16.7883 29.2866L32.8697 29.3061L30.5583 20.7143L19.1787 20.7013L16.7883 29.2866ZM27.4282 9.10412L24.9786 0C24.9655 0 24.949 0 24.9359 0L22.4042 9.09433L27.4282 9.10412ZM21.8682 11.0326L19.9842 17.8004L29.7725 17.8134L27.9509 11.0424L21.8682 11.0326ZM15.7789 32.9184L12.5436 44.5482C13.6286 45.0344 14.7465 45.4292 15.8841 45.7262C17.3802 46.1178 20.1946 46.3429 23.213 46.4114C22.9664 50.5165 22.654 54.8042 22.414 55H27.586C27.3427 54.8042 27.0303 50.5197 26.787 46.4147C29.8481 46.3527 32.679 46.1243 34.1159 45.7262C35.099 45.4554 36.0689 45.1127 37.0126 44.7048L33.8463 32.938L15.7789 32.9184Z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="menu-grid-col">
+                    <div>
+                        <div class="menu-title">
+                            VISIT
+                        </div>
+                        <ul class="menu-options2">
+                            <li>LOCATION</li>
+                            <li>MAP</li>
+                            <li>EVENTS</li>
+                            <li>FAQS</li>
+                        </ul>
+                    </div>
+                    <div class="menu-list-footer">
+                        <div>Say Hello</div>
+                        <div>
+                            <p>friends@therailpark.org</p>
+                            <p>215-485-2221</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-grid-col">
+                    <div>
+                        <div class="menu-title">
+                            VISION
+                        </div>
+                        <ul class="menu-options2">
+                            <li>PROGRESS</li>
+                            <li>HISTORY</li>
+                            <li>TEAM</li>
+                            <li>DONATE</li>
+                        </ul>
+                    </div>
+                    <div class="menu-list-footer">
+                        <div>Office</div>
+                        <div>
+                            <p>1219 Vine Street, Suite M</p>
+                            <p>Philadelphia, PA 19107</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-grid-col">
+                    <div class="column3-upper">
+                        <div class="info-container">
+                            <div class="menu-info">
+                                <div class="small-text">
+                                    Hours & Info
+                                </div>
+                                <div>
+                                    <h2>
+                                        Free and open daily 7:00 am - 10:00 pm
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="menu-info">
+                                <div class="small-text">Entrance</div>
+                                <div>
+                                    <h2>N.Broad & Noble Streets, Philadelphia, PA 19123</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-info">
+                            <div class="small-text">Follow Along</div>
+                            <div class="social-links">
+                                <div class="social" id="insta">
+                                    <a href="#">
+                                        <svg width="29" height="29" viewBox="0 0 29 29"
+                                            xmlns="http://www.w3.org/2000/svg" class="instagram" fill="white">
+                                            <title>Instagram</title>
+                                            <path
+                                                d="M14.5006 2.61227C18.3727 2.61227 18.8315 2.62699 20.3597 2.69723C21.7735 2.7618 22.5416 2.99742 23.0525 3.1968C23.7288 3.45961 24.2125 3.77453 24.7201 4.28203C25.2276 4.78953 25.5414 5.27211 25.8042 5.94953C26.0025 6.46043 26.2392 7.22848 26.3038 8.64223C26.374 10.1715 26.3888 10.6303 26.3888 14.5011C26.3888 18.372 26.374 18.8319 26.3038 20.36C26.2392 21.7738 26.0036 22.5418 25.8042 23.0527C25.5414 23.729 25.2265 24.2127 24.7201 24.7202C24.2125 25.2277 23.73 25.5415 23.0525 25.8043C22.5416 26.0026 21.7735 26.2393 20.3597 26.3039C18.8303 26.3741 18.3727 26.3889 14.5006 26.3889C10.6285 26.3889 10.1697 26.3741 8.64143 26.3039C7.22763 26.2393 6.45955 26.0037 5.94863 25.8043C5.27232 25.5415 4.78859 25.2266 4.28107 24.7202C3.77355 24.2127 3.45974 23.7302 3.19692 23.0527C2.99867 22.5418 2.7619 21.7738 2.69733 20.36C2.62709 18.8307 2.61237 18.372 2.61237 14.5011C2.61237 10.6303 2.62709 10.1704 2.69733 8.64223C2.7619 7.22848 2.99754 6.46043 3.19692 5.94953C3.45974 5.27324 3.77468 4.78953 4.28107 4.28203C4.78745 3.77453 5.27118 3.46074 5.94863 3.1968C6.45955 2.99855 7.22763 2.7618 8.64143 2.69723C10.1697 2.62699 10.6285 2.61227 14.5006 2.61227ZM14.5006 0C10.5628 0 10.0688 0.0169922 8.52248 0.0872266C6.9784 0.157461 5.92484 0.403281 5.00156 0.76125C4.0477 1.13168 3.23884 1.62785 2.43338 2.43328C1.62792 3.23871 1.13172 4.04867 0.76128 5.0025C0.403297 5.92461 0.157467 6.97813 0.08723 8.52215C0.0169928 10.0684 0 10.5623 0 14.5C0 18.4377 0.0169928 18.9316 0.08723 20.4779C0.157467 22.0207 0.403297 23.0754 0.76128 23.9975C1.13172 24.9513 1.62792 25.7602 2.43338 26.5656C3.23997 27.3721 4.0477 27.8672 5.00156 28.2376C5.92371 28.5956 6.9784 28.8414 8.52135 28.9116C10.0688 28.983 10.5628 29 14.5006 29C18.4384 29 18.9323 28.983 20.4787 28.9128C22.0216 28.8425 23.0763 28.5967 23.9984 28.2388C24.9523 27.8683 25.7612 27.3721 26.5666 26.5667C27.3732 25.7602 27.8683 24.9525 28.2387 23.9986C28.5967 23.0765 28.8425 22.0219 28.9128 20.479C28.983 18.9327 29 18.4388 29 14.5011C29 10.5635 28.983 10.0696 28.9128 8.52328C28.8425 6.98039 28.5967 5.92574 28.2387 5.00363C27.8683 4.0498 27.3721 3.24098 26.5666 2.43555C25.7612 1.63012 24.9523 1.13168 23.9984 0.76125C23.0763 0.403281 22.0216 0.157461 20.4787 0.0872266C18.9323 0.0169922 18.4384 0 14.5006 0ZM14.5006 7.05402C10.3883 7.05402 7.0543 10.3879 7.0543 14.5C7.0543 18.6121 10.3883 21.946 14.5006 21.946C18.6128 21.946 21.9468 18.6121 21.9468 14.5C21.9468 10.3879 18.6128 7.05402 14.5006 7.05402ZM14.5006 19.3337C11.8316 19.3337 9.66667 17.17 9.66667 14.5C9.66667 11.83 11.8304 9.66629 14.5006 9.66629C17.1707 9.66629 19.3345 11.83 19.3345 14.5C19.3345 17.17 17.1696 19.3337 14.5006 19.3337ZM23.9814 6.75949C23.9814 7.72012 23.202 8.49949 22.2414 8.49949C21.2807 8.49949 20.5013 7.72012 20.5013 6.75949C20.5013 5.79887 21.2807 5.01949 22.2414 5.01949C23.202 5.01949 23.9814 5.79887 23.9814 6.75949Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="social" id="twitter">
+                                    <a href="">
+                                        <svg width="37" height="29" viewBox="0 0 37 29"
+                                            xmlns="http://www.w3.org/2000/svg" class="twitter" fill="white">
+                                            <title>Twitter</title>
+                                            <path
+                                                d="M11.6358 29C25.5981 29 33.2349 17.8442 33.2349 8.1699C33.2349 7.85304 33.2275 7.5376 33.2127 7.2236C34.6942 6.19023 35.9832 4.90137 37 3.43267C35.6399 4.01501 34.1762 4.40752 32.6399 4.58451C34.2072 3.67817 35.4105 2.24373 35.9773 0.53524C34.5106 1.3745 32.8856 1.98396 31.157 2.31224C29.7732 0.890639 27.8003 0 25.6173 0C21.4245 0 18.0249 3.27852 18.0249 7.32065C18.0249 7.89586 18.0915 8.45393 18.2218 8.98917C11.914 8.68373 6.31812 5.7706 2.5752 1.34024C1.92252 2.42214 1.5466 3.67959 1.5466 5.01983C1.5466 7.56044 2.88748 9.80131 4.92396 11.113C3.67928 11.0759 2.5086 10.7462 1.48592 10.1967C1.48444 10.2266 1.48444 10.258 1.48444 10.2894C1.48444 13.8349 4.10108 16.7951 7.57464 17.4659C6.93676 17.6329 6.26632 17.7229 5.57368 17.7229C5.08528 17.7229 4.60872 17.6758 4.14696 17.5901C5.1134 20.499 7.91504 22.6157 11.2391 22.6742C8.64024 24.6382 5.36796 25.8085 1.81152 25.8085C1.1988 25.8085 0.59496 25.7743 0 25.7072C3.3596 27.7882 7.3482 29 11.6358 29Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="social" id="facebook">
+                                    <a href="#">
+                                        <svg width="30" height="30" viewBox="0 0 30 30"
+                                            xmlns="http://www.w3.org/2000/svg" class="facebook" fill="white">
+                                            <title>Facebook</title>
+                                            <path
+                                                d="M15 0C6.71631 0 0 6.75716 0 15.0912C0 22.623 5.48438 28.8667 12.6565 30V19.4544H8.84678V15.0912H12.6562V11.7656C12.6562 7.98155 14.8966 5.89324 18.322 5.89324C19.9632 5.89324 21.6803 6.18829 21.6803 6.18829V9.90214H19.7883C19.7593 9.90214 19.7303 9.90244 19.7019 9.90303C18.1087 9.93457 17.4853 10.8412 17.3657 11.8672C17.3657 11.8684 17.3654 11.8696 17.3654 11.8705C17.3634 11.8885 17.3613 11.9062 17.3596 11.9241C17.3596 11.9247 17.3596 11.925 17.3593 11.9256C17.3578 11.9406 17.3566 11.956 17.3552 11.971C17.3549 11.9742 17.3546 11.9778 17.3543 11.981C17.3531 11.9946 17.3522 12.0081 17.3514 12.0214C17.3511 12.0264 17.3505 12.0314 17.3502 12.0364C17.3496 12.0476 17.349 12.0588 17.3484 12.07C17.3481 12.0774 17.3476 12.0848 17.3473 12.0921C17.3464 12.1092 17.3458 12.1263 17.3452 12.1437C17.3452 12.1452 17.3452 12.1464 17.3449 12.1478C17.3443 12.1638 17.344 12.18 17.3438 12.1959C17.3438 12.1985 17.3438 12.2012 17.3435 12.2038C17.3432 12.2224 17.3432 12.2413 17.3432 12.2599V15.0912H21.503L20.8389 19.4544H17.3435V29.9997C24.5156 28.8687 30 22.625 30 15.0912C30 6.75716 23.2837 0 15 0Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2023 Friends of the Rail Park</p>
+                        <p>
+                            The Friends of the Rail Park is a 501(c)3.
+                        </p>
+                        <p>
+                            All donations are tax-deductible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <main>
             <div class="hero">
-                <h1>The Rail Park</h1>
+                <h1>The Rail</h1>
+                <h1>Park</h1>
             </div>
-            <div class="carousel-toggle">
+            <div class="carousel-container">
                 <div id="left-btn" onclick="prev">
                     <svg width="54" height="13" viewBox="0 0 54 13" fill="#131313" xmlns="http://www.w3.org/2000/svg"
                         style="transform:rotate(180deg)">
@@ -69,31 +226,29 @@
                         </path>
                     </svg>
                 </div>
-                <div id="carousel">
-                    <div id="carousel-1" class="carousel">
-                        <div class="carousel-text">
-                            <div>
-                                <p>Roots of the Rail Park End-of-Year Fundraiser</p>
-                            </div>
-                            <div><a href="#">Make a donation today <span class="material-symbols-outlined">
-                                        arrow_forward
-                                    </span></a></div>
+                <div id="carousel-1" class="carousel">
+                    <div class="carousel-text">
+                        <div>
+                            <p>Roots of the Rail Park End-of-Year Fundraiser</p>
                         </div>
-                        <img src="https://images.prismic.io/railpark/e2aa6a85-3e69-494d-bb1b-6ed07decaf3c_RotRP_KindfulCampaignHeader_approved.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593"
-                            alt="banner" class="carousel-img">
+                        <div><a href="#">Make a donation today <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span></a></div>
                     </div>
-                    <div id="carousel-2" class="carousel">
-                        <div class="carousel-text">
-                            <div>
-                                <p>Phase One is free & open daily</p>
-                            </div>
-                            <div><a href="#">Plan your visit <span class="material-symbols-outlined">
-                                        arrow_forward
-                                    </span></a></div>
+                    <img src="https://images.prismic.io/railpark/e2aa6a85-3e69-494d-bb1b-6ed07decaf3c_RotRP_KindfulCampaignHeader_approved.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593"
+                        alt="banner" class="carousel-img">
+                </div>
+                <div id="carousel-2" class="carousel">
+                    <div class="carousel-text">
+                        <div>
+                            <p>Phase One is free & open daily</p>
                         </div>
-                        <img src="https://images.prismic.io/railpark/b75ee5d3-664e-44d8-975a-b739140bf61d_landing-page-header-phase-1.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=605"
-                            alt="" class="carousel-img">
+                        <div><a href="#">Plan your visit <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span></a></div>
                     </div>
+                    <img src="https://images.prismic.io/railpark/b75ee5d3-664e-44d8-975a-b739140bf61d_landing-page-header-phase-1.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=605"
+                        alt="" class="carousel-img">
                 </div>
                 <div id="right-btn" onclick="next">
                     <svg width="54" height="13" viewBox="0 0 54 13" fill="#131313" xmlns="http://www.w3.org/2000/svg">
@@ -103,85 +258,165 @@
                     </svg>
                 </div>
             </div>
-            <section class="grid2x2">
-                <div class="video-container">
-                    <img src="https://images.prismic.io/railpark/28507bd7-e937-4074-87b0-95751194f4c1_noble-entrance.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1946&h=1096"
-                        alt="">
-                    <video
-                        src="https://railpark.cdn.prismic.io/railpark/2dbc0398-7647-47f1-a9b2-519d8521eaf2_noble-st-entrance.mp4"
-                        autoplay loop>
-                    </video>
+
+            <section id="entrances-tablet">
+                <div class="heading">
+                    <p>Visiting the</p>
+                    <p>Rail Park</p>
                 </div>
-                <div class="info" id="noble-st">
-                    <div class="title">
-                        <div id="left-arrow" class="large-icon">
-                            <span class="material-symbols-outlined">
-                                arrow_back
-                            </span>
-                        </div>
-                        <div class="inline">
-                            <div>
-                                <h2>Noble St Entrance</h2>
-                            </div>
-                            <div><span class="material-symbols-outlined large-icon">
-                                    accessible_forward
-                                </span></div>
-                        </div>
+                <div class="image-wrapper">
+                    <div class="image-container">
+                        <img src="https://images.prismic.io/railpark/28507bd7-e937-4074-87b0-95751194f4c1_noble-entrance.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1946&h=1096"
+                            alt="">
                     </div>
-                    <div class="small-text">
-                        <div>1300 Noble St.</div>
-                        <div>Get Directions <span class="material-symbols-outlined">
-                                call_made
-                            </span></div>
-                    </div>
-                </div>
-                <div class="info" id="callowhill-st">
-                    <div class="title">
-                        <div id="right-arrow" class="large-icon">
-                            <span class="material-symbols-outlined">
+                    <div class="img-icons">
+                        <div class="up-arrow">
+                            <span class="material-symbols-outlined" style="transform: rotate(-90deg);">
                                 arrow_forward
                             </span>
                         </div>
+                        <div id="accessible">
+                            <span class="material-symbols-outlined large-icon">
+                                accessible_forward
+                            </span>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h3>Noble St Entrance</h3>
+                    </div>
+                    <div class="entrance-subtext">
+                        <div class="subtitle">
+                            1300 Noble St.
+                        </div>
+                        <div class="directions">
+                            Get Directions <span class="material-symbols-outlined">
+                                call_made
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <div class="image-container">
+                        <img src="https://images.prismic.io/railpark/ca831225-3552-40ec-9f6f-bb576af3eb65_callowhill-entrance.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1946&h=1096"
+                            alt="">
+                    </div>
+                    <div class="img-icons">
+                        <div class="up-arrow">
+                            <span class="material-symbols-outlined" style="transform: rotate(-90deg);">
+                                arrow_forward
+                            </span>
+                        </div>
+                        <div id="floor">
+                            <span class="material-symbols-outlined large-icon">
+                                floor
+                            </span>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h3>Callowhill St Entrance</h3>
+                    </div>
+                    <div class="entrance-subtext">
+                        <div class="subtitle">
+                            Between 11th & 12th St
+                        </div>
+                        <div class="directions">
+                            Get Directions <span class="material-symbols-outlined">
+                                call_made
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                        <div class="inline">
-                            <div>
-                                <h2>Callowhill St Entrance</h2>
+
+            <section class="grid2x2">
+                <div class="heading">
+                    <p>Visiting the</p>
+                    <p>Rail Park</p>
+                </div>
+                <div id="noble-st">
+                    <div class="media-container">
+                        <img src="https://images.prismic.io/railpark/28507bd7-e937-4074-87b0-95751194f4c1_noble-entrance.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1946&h=1096"
+                            alt="">
+                        <video
+                            src="https://railpark.cdn.prismic.io/railpark/2dbc0398-7647-47f1-a9b2-519d8521eaf2_noble-st-entrance.mp4"
+                            autoplay muted loop playsinline>
+                        </video>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <div id="left-arrow" class="large-icon">
+                                <span class="material-symbols-outlined">
+                                    arrow_back
+                                </span>
                             </div>
-                            <div><span class="material-symbols-outlined large-icon">
-                                    floor
+                            <div class="inline">
+                                <div>
+                                    <h2>Noble St Entrance</h2>
+                                </div>
+                                <div><span class="material-symbols-outlined large-icon">
+                                        accessible_forward
+                                    </span></div>
+                            </div>
+                        </div>
+                        <div class="small-text">
+                            <div>1300 Noble St.</div>
+                            <div>Get Directions <span class="material-symbols-outlined">
+                                    call_made
                                 </span></div>
                         </div>
                     </div>
-                    <div class="small-text">
-                        <div>Between 11th & 12th St</div>
-                        <div>Get Directions <span class="material-symbols-outlined">
-                                call_made
-                            </span></div>
-                    </div>
                 </div>
-                <div class="video-container">
-                    <img src="https://images.prismic.io/railpark/ca831225-3552-40ec-9f6f-bb576af3eb65_callowhill-entrance.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1946&h=1096"
-                        alt="">
-                    <video
-                        src="https://railpark.cdn.prismic.io/railpark/c301079f-60c5-43d1-8133-b8960b6c6f88_callowhill-st-entrance.mp4">
-                    </video>
+                <div id="callowhill-st">
+                    <div class="info">
+                        <div class="title">
+                            <div id="right-arrow" class="large-icon">
+                                <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </div>
+                            <div class="inline">
+                                <div>
+                                    <h2>Callowhill St Entrance</h2>
+                                </div>
+                                <div><span class="material-symbols-outlined large-icon">
+                                        floor
+                                    </span></div>
+                            </div>
+                        </div>
+                        <div class="small-text">
+                            <div>Between 11th & 12th St</div>
+                            <div>Get Directions <span class="material-symbols-outlined">
+                                    call_made
+                                </span></div>
+                        </div>
+                    </div>
+                    <div class="media-container">
+                        <img src="https://images.prismic.io/railpark/ca831225-3552-40ec-9f6f-bb576af3eb65_callowhill-entrance.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1946&h=1096"
+                            alt="">
+                        <video
+                            src="https://railpark.cdn.prismic.io/railpark/c301079f-60c5-43d1-8133-b8960b6c6f88_callowhill-st-entrance.mp4"
+                            autoplay muted loop playsinline>
+                        </video>
+                    </div>
                 </div>
             </section>
             <section id="large-text">
                 <div id="heading">
                     <h1>We are building a<br><a href="#" style="color: var(--link-color);" id="video-hover">three mile
-                            greenway<br></a>with three distinct sections<br>across ten neighbourhoods</h1>
+                            greenway <video loop src="https://railpark.cdn.prismic.io/railpark/936a14c9-3e2d-4625-b516-a74e7410eedd_visit-video-placeholder-small.mp4"></video><br></a>with three distinct sections<br>across ten neighbourhoods</h1>
                 </div>
                 <div id="subheading">
                     And there's a lot more to do
                 </div>
             </section>
-            <section class="wrapper">
+            <section class="parallax-container">
                 <div class="parallax">
-                    <div id="viaduct">
-                        <div class="image-container">
+                    <div id="viaduct" class="image-grid-item">
+                        <div class="media-container">
                             <img
                                 src="https://images.prismic.io/railpark/e9874d84-0be0-4864-80de-dfeab4d76be7_the-viaduct.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=689&h=861">
+                            <video src="https://railpark.cdn.prismic.io/railpark/a015b8be-8c97-4494-8383-b6289152e63d_homepage-viaduct.mp4"></video>
                         </div>
                         <div class="image-text">
                             <div class="image-heading">
@@ -192,10 +427,11 @@
                             </div>
                         </div>
                     </div>
-                    <div id="cut">
-                        <div class="image-container">
+                    <div id="cut" class="image-grid-item">
+                        <div class="media-container">
                             <img src="https://images.prismic.io/railpark/d7009ba0-a9fb-4192-96c3-da520075023d_the-cut.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=689&h=551"
                                 alt="">
+                            <video src="https://railpark.cdn.prismic.io/railpark/78469c21-3c1a-44cd-9bbf-d3355f6f611b_homepage-cut.mp4"></video>
                         </div>
                         <div class="image-text">
                             <div class="image-heading">
@@ -220,10 +456,11 @@
                             <a href="#">Learn more about the full vision &rightarrow;</a>
                         </div>
                     </div>
-                    <div id="tunnel">
-                        <div class="image-container">
+                    <div id="tunnel" class="image-grid-item">
+                        <div class="media-container">
                             <img
                                 src="https://images.prismic.io/railpark/ebcfced6-c746-43c0-91b8-ba8b64835cea_the-tunnel.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=594&h=743">
+                                <video src="https://railpark.cdn.prismic.io/railpark/dea485af-cf57-447b-be53-b58e30af5515_homepage-tunnel.mp4"></video>
                         </div>
                         <div class="image-text">
                             <div class="image-heading">
@@ -240,7 +477,7 @@
                 <div id="featured-event">
                     <div id="featured-img">
                         <img src="https://images.prismic.io/railpark/e2aa6a85-3e69-494d-bb1b-6ed07decaf3c_RotRP_KindfulCampaignHeader_approved.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593"
-                            alt="" width="600">
+                            alt="">
                     </div>
                     <div id="event-text">
                         <a href="#" id="event">
@@ -249,7 +486,7 @@
                                 <h2>Roots of the Rail Park End-of-Year Fundraiser</h2>
                             </div>
                             <div><a href="#" id="event-details">Details <span class="material-symbols-outlined">
-                                        call_made
+                                        arrow_forward
                                     </span></a>
                             </div>
                         </a>
@@ -282,15 +519,81 @@
                     </div>
                 </div>
             </section>
-            <section id="green">
-                <div>Be the first to know about news, events and progress.</div>
-                <div id="email-input"><input type="email" placeholder="Enter your email"><span
-                        class="material-symbols-outlined">
-                        arrow_forward
-                    </span></div>
-            </section>
+            
         </main>
-        <footer>
+
+        <section id="green">
+            <div>Be the first to know about news, events and progress.</div>
+            <div id="email-input"><input type="email" placeholder="Enter your email"><span
+                    class="material-symbols-outlined">
+                    arrow_forward
+                </span></div>
+        </section>
+
+        <footer class="footer-tablet">
+            <div id="donate-text">
+                <div id="coin-wrapper">
+                    <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" autoplay
+                        loop playsinline height="200" id="coin"></video>
+                </div>
+                <div class="rotating-text">
+                    CLICK HERE TO DONATE TODAY
+                </div>
+            </div>
+            <div class="footer-text" id="contact-info">
+                <div class="subtitle">
+                    Say Hello
+                </div>
+                <div>
+                    <p><a href="#">friends@therailpark.org</a></p>
+                    <p>215-485-2221</p>
+                </div>
+            </div>
+            <div class="footer-text" id="social-links">
+                <div class="subtitle">
+                    Follow Along
+                </div>
+                <div id="social">
+                    <ul id="socials">
+                        <li>
+                            <svg width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg"
+                                class="instagram" fill="white">
+                                <title>Instagram</title>
+                                <path
+                                    d="M14.5006 2.61227C18.3727 2.61227 18.8315 2.62699 20.3597 2.69723C21.7735 2.7618 22.5416 2.99742 23.0525 3.1968C23.7288 3.45961 24.2125 3.77453 24.7201 4.28203C25.2276 4.78953 25.5414 5.27211 25.8042 5.94953C26.0025 6.46043 26.2392 7.22848 26.3038 8.64223C26.374 10.1715 26.3888 10.6303 26.3888 14.5011C26.3888 18.372 26.374 18.8319 26.3038 20.36C26.2392 21.7738 26.0036 22.5418 25.8042 23.0527C25.5414 23.729 25.2265 24.2127 24.7201 24.7202C24.2125 25.2277 23.73 25.5415 23.0525 25.8043C22.5416 26.0026 21.7735 26.2393 20.3597 26.3039C18.8303 26.3741 18.3727 26.3889 14.5006 26.3889C10.6285 26.3889 10.1697 26.3741 8.64143 26.3039C7.22763 26.2393 6.45955 26.0037 5.94863 25.8043C5.27232 25.5415 4.78859 25.2266 4.28107 24.7202C3.77355 24.2127 3.45974 23.7302 3.19692 23.0527C2.99867 22.5418 2.7619 21.7738 2.69733 20.36C2.62709 18.8307 2.61237 18.372 2.61237 14.5011C2.61237 10.6303 2.62709 10.1704 2.69733 8.64223C2.7619 7.22848 2.99754 6.46043 3.19692 5.94953C3.45974 5.27324 3.77468 4.78953 4.28107 4.28203C4.78745 3.77453 5.27118 3.46074 5.94863 3.1968C6.45955 2.99855 7.22763 2.7618 8.64143 2.69723C10.1697 2.62699 10.6285 2.61227 14.5006 2.61227ZM14.5006 0C10.5628 0 10.0688 0.0169922 8.52248 0.0872266C6.9784 0.157461 5.92484 0.403281 5.00156 0.76125C4.0477 1.13168 3.23884 1.62785 2.43338 2.43328C1.62792 3.23871 1.13172 4.04867 0.76128 5.0025C0.403297 5.92461 0.157467 6.97813 0.08723 8.52215C0.0169928 10.0684 0 10.5623 0 14.5C0 18.4377 0.0169928 18.9316 0.08723 20.4779C0.157467 22.0207 0.403297 23.0754 0.76128 23.9975C1.13172 24.9513 1.62792 25.7602 2.43338 26.5656C3.23997 27.3721 4.0477 27.8672 5.00156 28.2376C5.92371 28.5956 6.9784 28.8414 8.52135 28.9116C10.0688 28.983 10.5628 29 14.5006 29C18.4384 29 18.9323 28.983 20.4787 28.9128C22.0216 28.8425 23.0763 28.5967 23.9984 28.2388C24.9523 27.8683 25.7612 27.3721 26.5666 26.5667C27.3732 25.7602 27.8683 24.9525 28.2387 23.9986C28.5967 23.0765 28.8425 22.0219 28.9128 20.479C28.983 18.9327 29 18.4388 29 14.5011C29 10.5635 28.983 10.0696 28.9128 8.52328C28.8425 6.98039 28.5967 5.92574 28.2387 5.00363C27.8683 4.0498 27.3721 3.24098 26.5666 2.43555C25.7612 1.63012 24.9523 1.13168 23.9984 0.76125C23.0763 0.403281 22.0216 0.157461 20.4787 0.0872266C18.9323 0.0169922 18.4384 0 14.5006 0ZM14.5006 7.05402C10.3883 7.05402 7.0543 10.3879 7.0543 14.5C7.0543 18.6121 10.3883 21.946 14.5006 21.946C18.6128 21.946 21.9468 18.6121 21.9468 14.5C21.9468 10.3879 18.6128 7.05402 14.5006 7.05402ZM14.5006 19.3337C11.8316 19.3337 9.66667 17.17 9.66667 14.5C9.66667 11.83 11.8304 9.66629 14.5006 9.66629C17.1707 9.66629 19.3345 11.83 19.3345 14.5C19.3345 17.17 17.1696 19.3337 14.5006 19.3337ZM23.9814 6.75949C23.9814 7.72012 23.202 8.49949 22.2414 8.49949C21.2807 8.49949 20.5013 7.72012 20.5013 6.75949C20.5013 5.79887 21.2807 5.01949 22.2414 5.01949C23.202 5.01949 23.9814 5.79887 23.9814 6.75949Z">
+                                </path>
+                            </svg>
+
+                        </li>
+                        <li>
+                            <svg width="37" height="29" viewBox="0 0 37 29" xmlns="http://www.w3.org/2000/svg"
+                                class="twitter" fill="white">
+                                <title>Twitter</title>
+                                <path
+                                    d="M11.6358 29C25.5981 29 33.2349 17.8442 33.2349 8.1699C33.2349 7.85304 33.2275 7.5376 33.2127 7.2236C34.6942 6.19023 35.9832 4.90137 37 3.43267C35.6399 4.01501 34.1762 4.40752 32.6399 4.58451C34.2072 3.67817 35.4105 2.24373 35.9773 0.53524C34.5106 1.3745 32.8856 1.98396 31.157 2.31224C29.7732 0.890639 27.8003 0 25.6173 0C21.4245 0 18.0249 3.27852 18.0249 7.32065C18.0249 7.89586 18.0915 8.45393 18.2218 8.98917C11.914 8.68373 6.31812 5.7706 2.5752 1.34024C1.92252 2.42214 1.5466 3.67959 1.5466 5.01983C1.5466 7.56044 2.88748 9.80131 4.92396 11.113C3.67928 11.0759 2.5086 10.7462 1.48592 10.1967C1.48444 10.2266 1.48444 10.258 1.48444 10.2894C1.48444 13.8349 4.10108 16.7951 7.57464 17.4659C6.93676 17.6329 6.26632 17.7229 5.57368 17.7229C5.08528 17.7229 4.60872 17.6758 4.14696 17.5901C5.1134 20.499 7.91504 22.6157 11.2391 22.6742C8.64024 24.6382 5.36796 25.8085 1.81152 25.8085C1.1988 25.8085 0.59496 25.7743 0 25.7072C3.3596 27.7882 7.3482 29 11.6358 29Z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
+                                class="facebook" fill="white">
+                                <title>Facebook</title>
+                                <path
+                                    d="M15 0C6.71631 0 0 6.75716 0 15.0912C0 22.623 5.48438 28.8667 12.6565 30V19.4544H8.84678V15.0912H12.6562V11.7656C12.6562 7.98155 14.8966 5.89324 18.322 5.89324C19.9632 5.89324 21.6803 6.18829 21.6803 6.18829V9.90214H19.7883C19.7593 9.90214 19.7303 9.90244 19.7019 9.90303C18.1087 9.93457 17.4853 10.8412 17.3657 11.8672C17.3657 11.8684 17.3654 11.8696 17.3654 11.8705C17.3634 11.8885 17.3613 11.9062 17.3596 11.9241C17.3596 11.9247 17.3596 11.925 17.3593 11.9256C17.3578 11.9406 17.3566 11.956 17.3552 11.971C17.3549 11.9742 17.3546 11.9778 17.3543 11.981C17.3531 11.9946 17.3522 12.0081 17.3514 12.0214C17.3511 12.0264 17.3505 12.0314 17.3502 12.0364C17.3496 12.0476 17.349 12.0588 17.3484 12.07C17.3481 12.0774 17.3476 12.0848 17.3473 12.0921C17.3464 12.1092 17.3458 12.1263 17.3452 12.1437C17.3452 12.1452 17.3452 12.1464 17.3449 12.1478C17.3443 12.1638 17.344 12.18 17.3438 12.1959C17.3438 12.1985 17.3438 12.2012 17.3435 12.2038C17.3432 12.2224 17.3432 12.2413 17.3432 12.2599V15.0912H21.503L20.8389 19.4544H17.3435V29.9997C24.5156 28.8687 30 22.625 30 15.0912C30 6.75716 23.2837 0 15 0Z">
+                                </path>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="copyright">
+                <p>&copy; 2023 Friend of the Rail Park</p>
+                <p>The Friends of the Rail Park is a 501(c)3.</p>
+                <p>All donations are tax-deductible.</p>
+            </div>
+        </footer>
+
+        <footer class="footer-large">
             <div id="footer-grid">
                 <div class="grid-item">
                     <div id="donate">
@@ -301,7 +604,7 @@
                             <!-- <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" autoplay loop playsinline height="200"></video> -->
                         </div>
                     </div>
-                    <div id="copyright">
+                    <div class="copyright">
                         <p>&copy; 2023 Friends of the Rail Park</p>
                         <p>
                             The Friends of the Rail Park is a 501(c)3.
@@ -371,7 +674,7 @@
                         <div class="small-text footer-heading">
                             Follow Along
                         </div>
-                        <div id="social-links">
+                        <div class="social-links">
                             <div class="social" id="insta">
                                 <a href="#">
                                     <svg width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg"
@@ -434,9 +737,9 @@
                 </div>
             </nav>
 
-            <div id="mobile-menu">
+            <div id="mobile-menu" class="menu">
                 <nav class="navbar" id="nav-menu">
-                    <div id="close-btn">
+                    <div class="close-btn">
                         <span class="material-symbols-outlined">
                             close
                         </span>
@@ -451,13 +754,13 @@
                         </svg>
                     </div>
                 </nav>
-                <div id="search-bar">
+                <div class="search-bar">
                     <div id="search-icon">
                         <span class="material-symbols-outlined">
                             search
                         </span>
                     </div>
-                    <div id="search-box">
+                    <div class="search-box">
                         <input type="text" placeholder="Search">
                     </div>
                 </div>
@@ -582,7 +885,8 @@
                 <p>The Rail Park</p>
             </div>
             <div class="hero-img image-container">
-                <img src="https://images.prismic.io/railpark/e2aa6a85-3e69-494d-bb1b-6ed07decaf3c_RotRP_KindfulCampaignHeader_approved.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593" alt="">
+                <img src="https://images.prismic.io/railpark/e2aa6a85-3e69-494d-bb1b-6ed07decaf3c_RotRP_KindfulCampaignHeader_approved.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593"
+                    alt="">
             </div>
             <div id="swipe">
                 &leftarrow; Swipe &rightarrow;
@@ -597,14 +901,15 @@
                     <a href="#">Make a donation today!</a>
                 </div>
             </div>
-            <section id="entrances">
+            <section id="entrances-mobile">
                 <div class="heading">
                     <p>Visiting the</p>
                     <p>Rail Park</p>
                 </div>
                 <div class="image-wrapper">
                     <div class="image-container">
-                        <img src="https://images.prismic.io/railpark/28507bd7-e937-4074-87b0-95751194f4c1_noble-entrance.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1946&h=1096" alt="">
+                        <img src="https://images.prismic.io/railpark/28507bd7-e937-4074-87b0-95751194f4c1_noble-entrance.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1946&h=1096"
+                            alt="">
                     </div>
                     <div class="img-icons">
                         <div class="up-arrow">
@@ -634,7 +939,8 @@
                 </div>
                 <div class="image-wrapper">
                     <div class="image-container">
-                        <img src="https://images.prismic.io/railpark/ca831225-3552-40ec-9f6f-bb576af3eb65_callowhill-entrance.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1946&h=1096" alt="">
+                        <img src="https://images.prismic.io/railpark/ca831225-3552-40ec-9f6f-bb576af3eb65_callowhill-entrance.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1946&h=1096"
+                            alt="">
                     </div>
                     <div class="img-icons">
                         <div class="up-arrow">
@@ -665,13 +971,16 @@
             </section>
 
             <div class="video-container">
-                <video src="https://railpark.cdn.prismic.io/railpark/936a14c9-3e2d-4625-b516-a74e7410eedd_visit-video-placeholder-small.mp4" autoplay loop playsinline></video>
+                <video
+                    src="https://railpark.cdn.prismic.io/railpark/936a14c9-3e2d-4625-b516-a74e7410eedd_visit-video-placeholder-small.mp4"
+                    autoplay loop playsinline></video>
             </div>
 
             <div class="greenway">
                 <div class="heading">
-                    We are building a 
-                    <a href="#" style="color: var(--link-color);">three mile greenway</a> with three distinct sections across ten neighbourhoods
+                    We are building a
+                    <a href="#" style="color: var(--link-color);">three mile greenway</a> with three distinct sections
+                    across ten neighbourhoods
                 </div>
                 <div class="subtitle">
                     And there's a lot more to do
@@ -683,7 +992,8 @@
                     <div class="image-grid">
                         <div class="grid-item" id="viaduct">
                             <div class="image-container" id="viaduct-img">
-                                <img src="https://images.prismic.io/railpark/e9874d84-0be0-4864-80de-dfeab4d76be7_the-viaduct.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=689&h=861" alt="">
+                                <img src="https://images.prismic.io/railpark/e9874d84-0be0-4864-80de-dfeab4d76be7_the-viaduct.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=689&h=861"
+                                    alt="">
                             </div>
                             <div class="img-title">
                                 The Viaduct
@@ -691,7 +1001,8 @@
                         </div>
                         <div class="grid-item" id="cut">
                             <div class="image-container" id="cut-img">
-                                <img src="https://images.prismic.io/railpark/d7009ba0-a9fb-4192-96c3-da520075023d_the-cut.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=689&h=551" alt="">
+                                <img src="https://images.prismic.io/railpark/d7009ba0-a9fb-4192-96c3-da520075023d_the-cut.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=689&h=551"
+                                    alt="">
                             </div>
                             <div class="img-title">
                                 The Cut
@@ -699,7 +1010,8 @@
                         </div>
                         <div class="grid-item" id="tunnel">
                             <div class="image-container" id="tunnel-img">
-                                <img src="https://images.prismic.io/railpark/ebcfced6-c746-43c0-91b8-ba8b64835cea_the-tunnel.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=594&h=743" alt="">
+                                <img src="https://images.prismic.io/railpark/ebcfced6-c746-43c0-91b8-ba8b64835cea_the-tunnel.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=594&h=743"
+                                    alt="">
                             </div>
                             <div class="img-title">
                                 The Tunnel
@@ -724,7 +1036,8 @@
             <section id="featured-event">
                 <div>
                     <div class="image-container">
-                        <img src="https://images.prismic.io/railpark/e2aa6a85-3e69-494d-bb1b-6ed07decaf3c_RotRP_KindfulCampaignHeader_approved.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593" alt="">
+                        <img src="https://images.prismic.io/railpark/e2aa6a85-3e69-494d-bb1b-6ed07decaf3c_RotRP_KindfulCampaignHeader_approved.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593"
+                            alt="">
                     </div>
                     <div id="featured-info">
                         <div class="subtitle">
@@ -745,24 +1058,25 @@
 
         </main>
 
-            <section id="green">
-                <div class="subtitle">
-                    Be the first to know about news, events and progress.
-                </div>
-                <div id="email-input">
-                    <input type="text" placeholder="Enter your email">
-                    <span class="material-symbols-outlined">
-                        arrow_forward
-                    </span>
-                </div>
-            </section>
+        <section id="green">
+            <div class="subtitle">
+                Be the first to know about news, events and progress.
+            </div>
+            <div id="email-input">
+                <input type="text" placeholder="Enter your email">
+                <span class="material-symbols-outlined">
+                    arrow_forward
+                </span>
+            </div>
+        </section>
 
-   
+
 
         <footer class="footer-mobile">
             <div id="donate">
                 <div id="coin-wrapper">
-                    <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" autoplay loop playsinline height="200" id="coin"></video>
+                    <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" autoplay
+                        loop playsinline height="200" id="coin"></video>
                 </div>
                 <div class="rotating-text" id="donate-text">
                     CLICK HERE TO DONATE TODAY
@@ -785,31 +1099,31 @@
                     <ul id="socials">
                         <li>
                             <svg width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg"
-                            class="instagram" fill="white">
-                            <title>Instagram</title>
-                            <path
-                                d="M14.5006 2.61227C18.3727 2.61227 18.8315 2.62699 20.3597 2.69723C21.7735 2.7618 22.5416 2.99742 23.0525 3.1968C23.7288 3.45961 24.2125 3.77453 24.7201 4.28203C25.2276 4.78953 25.5414 5.27211 25.8042 5.94953C26.0025 6.46043 26.2392 7.22848 26.3038 8.64223C26.374 10.1715 26.3888 10.6303 26.3888 14.5011C26.3888 18.372 26.374 18.8319 26.3038 20.36C26.2392 21.7738 26.0036 22.5418 25.8042 23.0527C25.5414 23.729 25.2265 24.2127 24.7201 24.7202C24.2125 25.2277 23.73 25.5415 23.0525 25.8043C22.5416 26.0026 21.7735 26.2393 20.3597 26.3039C18.8303 26.3741 18.3727 26.3889 14.5006 26.3889C10.6285 26.3889 10.1697 26.3741 8.64143 26.3039C7.22763 26.2393 6.45955 26.0037 5.94863 25.8043C5.27232 25.5415 4.78859 25.2266 4.28107 24.7202C3.77355 24.2127 3.45974 23.7302 3.19692 23.0527C2.99867 22.5418 2.7619 21.7738 2.69733 20.36C2.62709 18.8307 2.61237 18.372 2.61237 14.5011C2.61237 10.6303 2.62709 10.1704 2.69733 8.64223C2.7619 7.22848 2.99754 6.46043 3.19692 5.94953C3.45974 5.27324 3.77468 4.78953 4.28107 4.28203C4.78745 3.77453 5.27118 3.46074 5.94863 3.1968C6.45955 2.99855 7.22763 2.7618 8.64143 2.69723C10.1697 2.62699 10.6285 2.61227 14.5006 2.61227ZM14.5006 0C10.5628 0 10.0688 0.0169922 8.52248 0.0872266C6.9784 0.157461 5.92484 0.403281 5.00156 0.76125C4.0477 1.13168 3.23884 1.62785 2.43338 2.43328C1.62792 3.23871 1.13172 4.04867 0.76128 5.0025C0.403297 5.92461 0.157467 6.97813 0.08723 8.52215C0.0169928 10.0684 0 10.5623 0 14.5C0 18.4377 0.0169928 18.9316 0.08723 20.4779C0.157467 22.0207 0.403297 23.0754 0.76128 23.9975C1.13172 24.9513 1.62792 25.7602 2.43338 26.5656C3.23997 27.3721 4.0477 27.8672 5.00156 28.2376C5.92371 28.5956 6.9784 28.8414 8.52135 28.9116C10.0688 28.983 10.5628 29 14.5006 29C18.4384 29 18.9323 28.983 20.4787 28.9128C22.0216 28.8425 23.0763 28.5967 23.9984 28.2388C24.9523 27.8683 25.7612 27.3721 26.5666 26.5667C27.3732 25.7602 27.8683 24.9525 28.2387 23.9986C28.5967 23.0765 28.8425 22.0219 28.9128 20.479C28.983 18.9327 29 18.4388 29 14.5011C29 10.5635 28.983 10.0696 28.9128 8.52328C28.8425 6.98039 28.5967 5.92574 28.2387 5.00363C27.8683 4.0498 27.3721 3.24098 26.5666 2.43555C25.7612 1.63012 24.9523 1.13168 23.9984 0.76125C23.0763 0.403281 22.0216 0.157461 20.4787 0.0872266C18.9323 0.0169922 18.4384 0 14.5006 0ZM14.5006 7.05402C10.3883 7.05402 7.0543 10.3879 7.0543 14.5C7.0543 18.6121 10.3883 21.946 14.5006 21.946C18.6128 21.946 21.9468 18.6121 21.9468 14.5C21.9468 10.3879 18.6128 7.05402 14.5006 7.05402ZM14.5006 19.3337C11.8316 19.3337 9.66667 17.17 9.66667 14.5C9.66667 11.83 11.8304 9.66629 14.5006 9.66629C17.1707 9.66629 19.3345 11.83 19.3345 14.5C19.3345 17.17 17.1696 19.3337 14.5006 19.3337ZM23.9814 6.75949C23.9814 7.72012 23.202 8.49949 22.2414 8.49949C21.2807 8.49949 20.5013 7.72012 20.5013 6.75949C20.5013 5.79887 21.2807 5.01949 22.2414 5.01949C23.202 5.01949 23.9814 5.79887 23.9814 6.75949Z">
-                            </path>
-                        </svg>
+                                class="instagram" fill="white">
+                                <title>Instagram</title>
+                                <path
+                                    d="M14.5006 2.61227C18.3727 2.61227 18.8315 2.62699 20.3597 2.69723C21.7735 2.7618 22.5416 2.99742 23.0525 3.1968C23.7288 3.45961 24.2125 3.77453 24.7201 4.28203C25.2276 4.78953 25.5414 5.27211 25.8042 5.94953C26.0025 6.46043 26.2392 7.22848 26.3038 8.64223C26.374 10.1715 26.3888 10.6303 26.3888 14.5011C26.3888 18.372 26.374 18.8319 26.3038 20.36C26.2392 21.7738 26.0036 22.5418 25.8042 23.0527C25.5414 23.729 25.2265 24.2127 24.7201 24.7202C24.2125 25.2277 23.73 25.5415 23.0525 25.8043C22.5416 26.0026 21.7735 26.2393 20.3597 26.3039C18.8303 26.3741 18.3727 26.3889 14.5006 26.3889C10.6285 26.3889 10.1697 26.3741 8.64143 26.3039C7.22763 26.2393 6.45955 26.0037 5.94863 25.8043C5.27232 25.5415 4.78859 25.2266 4.28107 24.7202C3.77355 24.2127 3.45974 23.7302 3.19692 23.0527C2.99867 22.5418 2.7619 21.7738 2.69733 20.36C2.62709 18.8307 2.61237 18.372 2.61237 14.5011C2.61237 10.6303 2.62709 10.1704 2.69733 8.64223C2.7619 7.22848 2.99754 6.46043 3.19692 5.94953C3.45974 5.27324 3.77468 4.78953 4.28107 4.28203C4.78745 3.77453 5.27118 3.46074 5.94863 3.1968C6.45955 2.99855 7.22763 2.7618 8.64143 2.69723C10.1697 2.62699 10.6285 2.61227 14.5006 2.61227ZM14.5006 0C10.5628 0 10.0688 0.0169922 8.52248 0.0872266C6.9784 0.157461 5.92484 0.403281 5.00156 0.76125C4.0477 1.13168 3.23884 1.62785 2.43338 2.43328C1.62792 3.23871 1.13172 4.04867 0.76128 5.0025C0.403297 5.92461 0.157467 6.97813 0.08723 8.52215C0.0169928 10.0684 0 10.5623 0 14.5C0 18.4377 0.0169928 18.9316 0.08723 20.4779C0.157467 22.0207 0.403297 23.0754 0.76128 23.9975C1.13172 24.9513 1.62792 25.7602 2.43338 26.5656C3.23997 27.3721 4.0477 27.8672 5.00156 28.2376C5.92371 28.5956 6.9784 28.8414 8.52135 28.9116C10.0688 28.983 10.5628 29 14.5006 29C18.4384 29 18.9323 28.983 20.4787 28.9128C22.0216 28.8425 23.0763 28.5967 23.9984 28.2388C24.9523 27.8683 25.7612 27.3721 26.5666 26.5667C27.3732 25.7602 27.8683 24.9525 28.2387 23.9986C28.5967 23.0765 28.8425 22.0219 28.9128 20.479C28.983 18.9327 29 18.4388 29 14.5011C29 10.5635 28.983 10.0696 28.9128 8.52328C28.8425 6.98039 28.5967 5.92574 28.2387 5.00363C27.8683 4.0498 27.3721 3.24098 26.5666 2.43555C25.7612 1.63012 24.9523 1.13168 23.9984 0.76125C23.0763 0.403281 22.0216 0.157461 20.4787 0.0872266C18.9323 0.0169922 18.4384 0 14.5006 0ZM14.5006 7.05402C10.3883 7.05402 7.0543 10.3879 7.0543 14.5C7.0543 18.6121 10.3883 21.946 14.5006 21.946C18.6128 21.946 21.9468 18.6121 21.9468 14.5C21.9468 10.3879 18.6128 7.05402 14.5006 7.05402ZM14.5006 19.3337C11.8316 19.3337 9.66667 17.17 9.66667 14.5C9.66667 11.83 11.8304 9.66629 14.5006 9.66629C17.1707 9.66629 19.3345 11.83 19.3345 14.5C19.3345 17.17 17.1696 19.3337 14.5006 19.3337ZM23.9814 6.75949C23.9814 7.72012 23.202 8.49949 22.2414 8.49949C21.2807 8.49949 20.5013 7.72012 20.5013 6.75949C20.5013 5.79887 21.2807 5.01949 22.2414 5.01949C23.202 5.01949 23.9814 5.79887 23.9814 6.75949Z">
+                                </path>
+                            </svg>
 
                         </li>
                         <li>
                             <svg width="37" height="29" viewBox="0 0 37 29" xmlns="http://www.w3.org/2000/svg"
-                            class="twitter" fill="white">
-                            <title>Twitter</title>
-                            <path
-                                d="M11.6358 29C25.5981 29 33.2349 17.8442 33.2349 8.1699C33.2349 7.85304 33.2275 7.5376 33.2127 7.2236C34.6942 6.19023 35.9832 4.90137 37 3.43267C35.6399 4.01501 34.1762 4.40752 32.6399 4.58451C34.2072 3.67817 35.4105 2.24373 35.9773 0.53524C34.5106 1.3745 32.8856 1.98396 31.157 2.31224C29.7732 0.890639 27.8003 0 25.6173 0C21.4245 0 18.0249 3.27852 18.0249 7.32065C18.0249 7.89586 18.0915 8.45393 18.2218 8.98917C11.914 8.68373 6.31812 5.7706 2.5752 1.34024C1.92252 2.42214 1.5466 3.67959 1.5466 5.01983C1.5466 7.56044 2.88748 9.80131 4.92396 11.113C3.67928 11.0759 2.5086 10.7462 1.48592 10.1967C1.48444 10.2266 1.48444 10.258 1.48444 10.2894C1.48444 13.8349 4.10108 16.7951 7.57464 17.4659C6.93676 17.6329 6.26632 17.7229 5.57368 17.7229C5.08528 17.7229 4.60872 17.6758 4.14696 17.5901C5.1134 20.499 7.91504 22.6157 11.2391 22.6742C8.64024 24.6382 5.36796 25.8085 1.81152 25.8085C1.1988 25.8085 0.59496 25.7743 0 25.7072C3.3596 27.7882 7.3482 29 11.6358 29Z">
-                            </path>
-                        </svg>
+                                class="twitter" fill="white">
+                                <title>Twitter</title>
+                                <path
+                                    d="M11.6358 29C25.5981 29 33.2349 17.8442 33.2349 8.1699C33.2349 7.85304 33.2275 7.5376 33.2127 7.2236C34.6942 6.19023 35.9832 4.90137 37 3.43267C35.6399 4.01501 34.1762 4.40752 32.6399 4.58451C34.2072 3.67817 35.4105 2.24373 35.9773 0.53524C34.5106 1.3745 32.8856 1.98396 31.157 2.31224C29.7732 0.890639 27.8003 0 25.6173 0C21.4245 0 18.0249 3.27852 18.0249 7.32065C18.0249 7.89586 18.0915 8.45393 18.2218 8.98917C11.914 8.68373 6.31812 5.7706 2.5752 1.34024C1.92252 2.42214 1.5466 3.67959 1.5466 5.01983C1.5466 7.56044 2.88748 9.80131 4.92396 11.113C3.67928 11.0759 2.5086 10.7462 1.48592 10.1967C1.48444 10.2266 1.48444 10.258 1.48444 10.2894C1.48444 13.8349 4.10108 16.7951 7.57464 17.4659C6.93676 17.6329 6.26632 17.7229 5.57368 17.7229C5.08528 17.7229 4.60872 17.6758 4.14696 17.5901C5.1134 20.499 7.91504 22.6157 11.2391 22.6742C8.64024 24.6382 5.36796 25.8085 1.81152 25.8085C1.1988 25.8085 0.59496 25.7743 0 25.7072C3.3596 27.7882 7.3482 29 11.6358 29Z">
+                                </path>
+                            </svg>
                         </li>
                         <li>
                             <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
-                            class="facebook" fill="white">
-                            <title>Facebook</title>
-                            <path
-                                d="M15 0C6.71631 0 0 6.75716 0 15.0912C0 22.623 5.48438 28.8667 12.6565 30V19.4544H8.84678V15.0912H12.6562V11.7656C12.6562 7.98155 14.8966 5.89324 18.322 5.89324C19.9632 5.89324 21.6803 6.18829 21.6803 6.18829V9.90214H19.7883C19.7593 9.90214 19.7303 9.90244 19.7019 9.90303C18.1087 9.93457 17.4853 10.8412 17.3657 11.8672C17.3657 11.8684 17.3654 11.8696 17.3654 11.8705C17.3634 11.8885 17.3613 11.9062 17.3596 11.9241C17.3596 11.9247 17.3596 11.925 17.3593 11.9256C17.3578 11.9406 17.3566 11.956 17.3552 11.971C17.3549 11.9742 17.3546 11.9778 17.3543 11.981C17.3531 11.9946 17.3522 12.0081 17.3514 12.0214C17.3511 12.0264 17.3505 12.0314 17.3502 12.0364C17.3496 12.0476 17.349 12.0588 17.3484 12.07C17.3481 12.0774 17.3476 12.0848 17.3473 12.0921C17.3464 12.1092 17.3458 12.1263 17.3452 12.1437C17.3452 12.1452 17.3452 12.1464 17.3449 12.1478C17.3443 12.1638 17.344 12.18 17.3438 12.1959C17.3438 12.1985 17.3438 12.2012 17.3435 12.2038C17.3432 12.2224 17.3432 12.2413 17.3432 12.2599V15.0912H21.503L20.8389 19.4544H17.3435V29.9997C24.5156 28.8687 30 22.625 30 15.0912C30 6.75716 23.2837 0 15 0Z">
-                            </path>
-                        </svg>
+                                class="facebook" fill="white">
+                                <title>Facebook</title>
+                                <path
+                                    d="M15 0C6.71631 0 0 6.75716 0 15.0912C0 22.623 5.48438 28.8667 12.6565 30V19.4544H8.84678V15.0912H12.6562V11.7656C12.6562 7.98155 14.8966 5.89324 18.322 5.89324C19.9632 5.89324 21.6803 6.18829 21.6803 6.18829V9.90214H19.7883C19.7593 9.90214 19.7303 9.90244 19.7019 9.90303C18.1087 9.93457 17.4853 10.8412 17.3657 11.8672C17.3657 11.8684 17.3654 11.8696 17.3654 11.8705C17.3634 11.8885 17.3613 11.9062 17.3596 11.9241C17.3596 11.9247 17.3596 11.925 17.3593 11.9256C17.3578 11.9406 17.3566 11.956 17.3552 11.971C17.3549 11.9742 17.3546 11.9778 17.3543 11.981C17.3531 11.9946 17.3522 12.0081 17.3514 12.0214C17.3511 12.0264 17.3505 12.0314 17.3502 12.0364C17.3496 12.0476 17.349 12.0588 17.3484 12.07C17.3481 12.0774 17.3476 12.0848 17.3473 12.0921C17.3464 12.1092 17.3458 12.1263 17.3452 12.1437C17.3452 12.1452 17.3452 12.1464 17.3449 12.1478C17.3443 12.1638 17.344 12.18 17.3438 12.1959C17.3438 12.1985 17.3438 12.2012 17.3435 12.2038C17.3432 12.2224 17.3432 12.2413 17.3432 12.2599V15.0912H21.503L20.8389 19.4544H17.3435V29.9997C24.5156 28.8687 30 22.625 30 15.0912C30 6.75716 23.2837 0 15 0Z">
+                                </path>
+                            </svg>
                         </li>
                     </ul>
                 </div>
@@ -821,7 +1135,7 @@
             </div>
         </footer>
     </div>
-    
+
 
 </body>
 

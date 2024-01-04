@@ -1,11 +1,17 @@
 @font-face {
     font-family: "Armin Grotesk";
     font-weight: 700;
-    src: url('D:/DVM Recruitments/Task3/Armin-Grotesk-Font/Demo_Fonts/Fontspring-DEMO-armingrotesk-normal.otf');
+    src: url('D:/DVM Recruitments/Task3/fonts/Armin-Grotesk-Font/Demo_Fonts/Fontspring-DEMO-armingrotesk-normal.otf');
 }
 
 @font-face {
     font-family: "Armin Grotesk";
     font-weight: 800;
-    src: url('D:/DVM Recruitments/Task3/Armin-Grotesk-Font/Demo_Fonts/Fontspring-DEMO-armingrotesk-ultrabold.otf');
+    src: url('D:/DVM Recruitments/Task3/fonts/Armin-Grotesk-Font/Demo_Fonts/Fontspring-DEMO-armingrotesk-ultrabold.otf');
+}
+
+@font-face {
+    font-family: 'Mongoose';
+    font-weight: 700;
+    src: url('D:/DVM Recruitments/Task3/fonts/Mongoose Font/Demo_Fonts/Fontspring-DEMO-mongoose-regular.otf');
 }

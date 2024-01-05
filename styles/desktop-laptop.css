@@ -50,7 +50,7 @@
         pointer-events: none;
         position: fixed;
         top: 0; left: 0;
-        background: url('/leaf_340817.png');
+        background: url('/assets/leaf_340817.png');
         background-position: center;
         background-size: cover;
         transition: transform 50ms linear;

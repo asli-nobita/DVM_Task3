@@ -19,6 +19,8 @@
 </head>
 
 <body>
+    <div class="customCursor">
+    </div>
     <div class="desktop">
         <header id="header-large">
             <nav class="navbar" id="nav-large">
@@ -340,7 +342,7 @@
                             alt="">
                         <video
                             src="https://railpark.cdn.prismic.io/railpark/2dbc0398-7647-47f1-a9b2-519d8521eaf2_noble-st-entrance.mp4"
-                            autoplay muted loop playsinline>
+                            muted loop playsinline preload="none">
                         </video>
                     </div>
                     <div class="info">
@@ -396,15 +398,17 @@
                             alt="">
                         <video
                             src="https://railpark.cdn.prismic.io/railpark/c301079f-60c5-43d1-8133-b8960b6c6f88_callowhill-st-entrance.mp4"
-                            autoplay muted loop playsinline>
+                            muted loop playsinline preload="none">
                         </video>
                     </div>
                 </div>
             </section>
             <section id="large-text">
                 <div id="heading">
-                    <h1>We are building a<br><a href="#" style="color: var(--link-color);" id="video-hover">three mile
-                            greenway <video loop src="https://railpark.cdn.prismic.io/railpark/936a14c9-3e2d-4625-b516-a74e7410eedd_visit-video-placeholder-small.mp4"></video><br></a>with three distinct sections<br>across ten neighbourhoods</h1>
+                    <h1>We are building a</h1>
+                    <h1 style="--order: 1;"><a href="#" style="color: var(--link-color);" id="video-hover">three mile greenway <video src="https://railpark.cdn.prismic.io/railpark/936a14c9-3e2d-4625-b516-a74e7410eedd_visit-video-placeholder-small.mp4" loop muted playsinline></video></a></h1>
+                    <h1 style="--order: 2;">with three distinct sections</h1>
+                    <h1 style="--order: 3;">across ten neighbourhoods</h1>
                 </div>
                 <div id="subheading">
                     And there's a lot more to do
@@ -413,10 +417,10 @@
             <section class="parallax-container">
                 <div class="parallax">
                     <div id="viaduct" class="image-grid-item">
-                        <div class="media-container">
+                        <div class="image-container">
                             <img
                                 src="https://images.prismic.io/railpark/e9874d84-0be0-4864-80de-dfeab4d76be7_the-viaduct.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=689&h=861">
-                            <video src="https://railpark.cdn.prismic.io/railpark/a015b8be-8c97-4494-8383-b6289152e63d_homepage-viaduct.mp4"></video>
+                            <video src="https://railpark.cdn.prismic.io/railpark/a015b8be-8c97-4494-8383-b6289152e63d_homepage-viaduct.mp4" loop muted preload="none"></video>
                         </div>
                         <div class="image-text">
                             <div class="image-heading">
@@ -428,10 +432,10 @@
                         </div>
                     </div>
                     <div id="cut" class="image-grid-item">
-                        <div class="media-container">
+                        <div class="image-container">
                             <img src="https://images.prismic.io/railpark/d7009ba0-a9fb-4192-96c3-da520075023d_the-cut.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=689&h=551"
                                 alt="">
-                            <video src="https://railpark.cdn.prismic.io/railpark/78469c21-3c1a-44cd-9bbf-d3355f6f611b_homepage-cut.mp4"></video>
+                            <video src="https://railpark.cdn.prismic.io/railpark/78469c21-3c1a-44cd-9bbf-d3355f6f611b_homepage-cut.mp4" loop muted preload="none"></video>
                         </div>
                         <div class="image-text">
                             <div class="image-heading">
@@ -457,10 +461,10 @@
                         </div>
                     </div>
                     <div id="tunnel" class="image-grid-item">
-                        <div class="media-container">
+                        <div class="image-container">
                             <img
                                 src="https://images.prismic.io/railpark/ebcfced6-c746-43c0-91b8-ba8b64835cea_the-tunnel.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=594&h=743">
-                                <video src="https://railpark.cdn.prismic.io/railpark/dea485af-cf57-447b-be53-b58e30af5515_homepage-tunnel.mp4"></video>
+                                <video src="https://railpark.cdn.prismic.io/railpark/dea485af-cf57-447b-be53-b58e30af5515_homepage-tunnel.mp4" loop muted playsinline preload="none"></video>
                         </div>
                         <div class="image-text">
                             <div class="image-heading">
@@ -533,8 +537,7 @@
         <footer class="footer-tablet">
             <div id="donate-text">
                 <div id="coin-wrapper">
-                    <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" autoplay
-                        loop playsinline height="200" id="coin"></video>
+                    <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" loop playsinline height="200" id="coin"></video>
                 </div>
                 <div class="rotating-text">
                     CLICK HERE TO DONATE TODAY
@@ -601,7 +604,7 @@
                             <p>CLICK HERE TO DONATE TODAY</p>
                         </div>
                         <div id="donate-video">
-                            <!-- <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" autoplay loop playsinline height="200"></video> -->
+                            <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" loop muted playsinline height="200"></video>
                         </div>
                     </div>
                     <div class="copyright">
@@ -973,7 +976,7 @@
             <div class="video-container">
                 <video
                     src="https://railpark.cdn.prismic.io/railpark/936a14c9-3e2d-4625-b516-a74e7410eedd_visit-video-placeholder-small.mp4"
-                    autoplay loop playsinline></video>
+                    loop playsinline></video>
             </div>
 
             <div class="greenway">
@@ -1070,13 +1073,10 @@
             </div>
         </section>
 
-
-
         <footer class="footer-mobile">
             <div id="donate">
                 <div id="coin-wrapper">
-                    <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" autoplay
-                        loop playsinline height="200" id="coin"></video>
+                    <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" loop playsinline height="200" id="coin"></video>
                 </div>
                 <div class="rotating-text" id="donate-text">
                     CLICK HERE TO DONATE TODAY

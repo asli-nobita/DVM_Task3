@@ -21,7 +21,7 @@
     body {
         font-size: 32px;
         height: 100vh;
-        /* overflow-x: hidden; */
+       
         background-color: var(--color-off-white);
         display: flex;
         flex-direction: column;
@@ -47,6 +47,18 @@
 
     .mobile, .grid2x2, #upcoming, .footer-large{
         display: none;
+    }
+
+    .customCursor {
+        height: 24px;
+        width: 24px;
+        z-index: 9999;
+        position: fixed;
+        top: 0; left: 0;
+        background: url('D:/DVM Recruitments/Task3/leaf_340817.png');
+        background-position: center;
+        background-size: cover;
+        transition: transform 50ms linear;;
     }
 
     #header-large {
@@ -129,7 +141,7 @@
         justify-content: space-around;
         margin-top: 0.5rem;
         font-size: 0.8rem;
-        /* width: 40%; */
+       
     }
 
     #lang-options div {
@@ -306,7 +318,7 @@
         left: 0;
         z-index: -1;
 
-        transition: 0.2s;
+        transition: 0.2s linear;
         visibility: hidden;
         opacity: 0;
         pointer-events: none;

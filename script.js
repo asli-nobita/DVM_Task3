@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const cursor = document.querySelector('.customCursor');
     document.addEventListener('mousemove', (e)=>{
-        cursor.style.transform = `translate3d(${e.clientX - 12}px, ${e.clientY - 12}px, 0)`;
+        cursor.style.transform = `translate3d(${e.clientX - 14}px, ${e.clientY - 14}px, 0)`;
     })
 
 });

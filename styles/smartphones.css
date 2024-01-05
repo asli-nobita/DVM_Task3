@@ -41,12 +41,12 @@
     }
 
     .customCursor {
-        height: 24px;
-        width: 24px;
+        height: 28px;
+        width: 28px;
         z-index: 9999;
         position: fixed;
         top: 0; left: 0;
-        background: url('D:/DVM Recruitments/Task3/leaf_340817.png');
+        background: url('/leaf_340817.png');
         background-position: center;
         background-size: cover;
         transition: transform 50ms linear;

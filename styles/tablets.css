@@ -21,7 +21,7 @@
     body {
         font-size: 32px;
         height: 100vh;
-       
+       cursor: auto;
         background-color: var(--color-off-white);
         display: flex;
         flex-direction: column;

@@ -6,7 +6,6 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        cursor: none !important;
     }
 
     :root {
@@ -24,6 +23,7 @@
         background-color: var(--color-off-white);
         min-height: 100vh;
         overflow-x: hidden;
+        cursor: auto;
     }
 
     a {

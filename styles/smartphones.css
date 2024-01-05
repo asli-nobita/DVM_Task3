@@ -115,8 +115,30 @@
         margin: 1.8rem 0 1rem;
     }
 
-    #swipe {
-        font-size: 1rem;
+    .carousel-wrapper {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .slide {
+        scroll-snap-align: start;
+        width: 100%;
+        height: 100%;
+        transform-origin: center center;
+        transition: 0.5s ease;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swipe {
+        font-size: 0.8rem;
+        font-weight: 700;
         display: flex;
         justify-content: center;
         margin-bottom: var(--spacing);
@@ -290,6 +312,37 @@
 
     .footer-text > .subtitle {
         text-align: center;
+    }
+
+    .rotateWrapper {
+        height: 250px;
+        width: auto;
+        position: relative;
+    }
+
+    .rotating-text {
+        width: 100%;
+        height: 100%;
+    }
+
+    .rotating-text svg {
+        position: absolute;
+        top: 0; left: 0;
+        fill: currentColor;
+        height: auto;
+        /* max-width: 100vmin; */
+        transform-origin: center;
+        width: 100%;
+        z-index: 10;
+        animation: rotate 20s linear infinite;
+    }
+
+    #coin-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 150px;
     }
 
     #social {

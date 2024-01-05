@@ -491,6 +491,30 @@
         font-size: 1.2rem;
     }
 
+    .rotateWrapper {
+        height: 250px;
+        width: auto;
+        position: relative;
+    }
+
+    .rotating-text {
+        width: 100%;
+        height: 100%;
+    }
+
+    .rotating-text svg {
+        position: absolute;
+        top: 0; left: 0;
+        fill: currentColor;
+        height: auto;
+        /* max-width: 100vmin; */
+        transform-origin: center;
+        width: 100%;
+        z-index: 10;
+        animation: rotate 20s linear infinite;
+    }
+
+
     #contact-info {
         margin-top: 2rem;
     }

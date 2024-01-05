@@ -406,7 +406,10 @@
             <section id="large-text">
                 <div id="heading">
                     <h1>We are building a</h1>
-                    <h1 style="--order: 1;"><a href="#" style="color: var(--link-color);" id="video-hover">three mile greenway <video src="https://railpark.cdn.prismic.io/railpark/936a14c9-3e2d-4625-b516-a74e7410eedd_visit-video-placeholder-small.mp4" loop muted playsinline></video></a></h1>
+                    <h1 style="--order: 1;"><a href="#" style="color: var(--link-color);" id="video-hover">three mile
+                            greenway <video
+                                src="https://railpark.cdn.prismic.io/railpark/936a14c9-3e2d-4625-b516-a74e7410eedd_visit-video-placeholder-small.mp4"
+                                loop muted playsinline></video></a></h1>
                     <h1 style="--order: 2;">with three distinct sections</h1>
                     <h1 style="--order: 3;">across ten neighbourhoods</h1>
                 </div>
@@ -420,7 +423,9 @@
                         <div class="image-container">
                             <img
                                 src="https://images.prismic.io/railpark/e9874d84-0be0-4864-80de-dfeab4d76be7_the-viaduct.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=689&h=861">
-                            <video src="https://railpark.cdn.prismic.io/railpark/a015b8be-8c97-4494-8383-b6289152e63d_homepage-viaduct.mp4" loop muted preload="none"></video>
+                            <video
+                                src="https://railpark.cdn.prismic.io/railpark/a015b8be-8c97-4494-8383-b6289152e63d_homepage-viaduct.mp4"
+                                loop muted preload="none"></video>
                         </div>
                         <div class="image-text">
                             <div class="image-heading">
@@ -435,7 +440,9 @@
                         <div class="image-container">
                             <img src="https://images.prismic.io/railpark/d7009ba0-a9fb-4192-96c3-da520075023d_the-cut.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=689&h=551"
                                 alt="">
-                            <video src="https://railpark.cdn.prismic.io/railpark/78469c21-3c1a-44cd-9bbf-d3355f6f611b_homepage-cut.mp4" loop muted preload="none"></video>
+                            <video
+                                src="https://railpark.cdn.prismic.io/railpark/78469c21-3c1a-44cd-9bbf-d3355f6f611b_homepage-cut.mp4"
+                                loop muted preload="none"></video>
                         </div>
                         <div class="image-text">
                             <div class="image-heading">
@@ -464,7 +471,9 @@
                         <div class="image-container">
                             <img
                                 src="https://images.prismic.io/railpark/ebcfced6-c746-43c0-91b8-ba8b64835cea_the-tunnel.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=594&h=743">
-                                <video src="https://railpark.cdn.prismic.io/railpark/dea485af-cf57-447b-be53-b58e30af5515_homepage-tunnel.mp4" loop muted playsinline preload="none"></video>
+                            <video
+                                src="https://railpark.cdn.prismic.io/railpark/dea485af-cf57-447b-be53-b58e30af5515_homepage-tunnel.mp4"
+                                loop muted playsinline preload="none"></video>
                         </div>
                         <div class="image-text">
                             <div class="image-heading">
@@ -523,7 +532,7 @@
                     </div>
                 </div>
             </section>
-            
+
         </main>
 
         <section id="green">
@@ -535,12 +544,26 @@
         </section>
 
         <footer class="footer-tablet">
-            <div id="donate-text">
+            <div class="rotateWrapper">
                 <div id="coin-wrapper">
-                    <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" loop playsinline height="200" id="coin"></video>
+                    <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" autoplay loop
+                        playsinline height="200" id="coin"></video>
                 </div>
                 <div class="rotating-text">
-                    CLICK HERE TO DONATE TODAY
+                    <svg viewBox="0 0 100 100" width="200" height="200">
+                        <defs>
+                            <path id="circle" d="
+                              M 50, 50
+                              m -39, 0
+                              a 39,39 0 1,1 79,0
+                              a 39,39 0 1,1 -79,0" />
+                        </defs>
+                        <text font-size="17">
+                            <textPath xlink:href="#circle">
+                                CLICK HERE TO DONATE TODAY
+                            </textPath>
+                        </text>
+                    </svg>
                 </div>
             </div>
             <div class="footer-text" id="contact-info">
@@ -599,12 +622,26 @@
         <footer class="footer-large">
             <div id="footer-grid">
                 <div class="grid-item">
-                    <div id="donate">
-                        <div id="rotating-text">
-                            <p>CLICK HERE TO DONATE TODAY</p>
+                    <div class="rotateWrapper">
+                        <div class="rotating-text">
+                            <svg viewBox="0 0 100 100" width="100" height="100">
+                                <defs>
+                                    <path id="circle" d="
+                                        M 50, 50
+                                        m -37, 0
+                                        a 37,37 0 1,1 74,0
+                                        a 37,37 0 1,1 -74,0" />
+                                </defs>
+                                <text font-size="17">
+                                    <textPath xlink:href="#circle">
+                                        CLICK HERE TO DONATE TODAY
+                                    </textPath>
+                                </text>
+                            </svg>
                         </div>
                         <div id="donate-video">
-                            <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" loop muted playsinline height="200"></video>
+                            <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4"
+                                autoplay loop muted playsinline height="200"></video>
                         </div>
                     </div>
                     <div class="copyright">
@@ -887,21 +924,43 @@
             <div class="hero">
                 <p>The Rail Park</p>
             </div>
-            <div class="hero-img image-container">
-                <img src="https://images.prismic.io/railpark/e2aa6a85-3e69-494d-bb1b-6ed07decaf3c_RotRP_KindfulCampaignHeader_approved.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593"
-                    alt="">
-            </div>
-            <div id="swipe">
-                &leftarrow; Swipe &rightarrow;
-            </div>
-            <div class="text-with-link">
-                <div class="title">
-                    <p>Roots of the Rail</p>
-                    <p>Park End-of-Year</p>
-                    <p>Fundraiser</p>
+            <div class="carousel-wrapper">
+                <div class="slide" id="slide1">
+                    <div class="hero-img image-container">
+                        <img src="https://images.prismic.io/railpark/e2aa6a85-3e69-494d-bb1b-6ed07decaf3c_RotRP_KindfulCampaignHeader_approved.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593"
+                            alt="">
+                    </div>
+                    <div class="swipe">
+                        &leftarrow; Swipe &rightarrow;
+                    </div>
+                    <div class="text-with-link">
+                        <div class="title">
+                            <p>Roots of the Rail</p>
+                            <p>Park End-of-Year</p>
+                            <p>Fundraiser</p>
+                        </div>
+                        <div class="link">
+                            <a href="#">Make a donation today!</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="link">
-                    <a href="#">Make a donation today!</a>
+                <div class="slide" id="slide2">
+                    <div class="hero-img image-container">
+                        <img src="https://images.prismic.io/railpark/b75ee5d3-664e-44d8-975a-b739140bf61d_landing-page-header-phase-1.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593" alt="">
+                    </div>
+                    <div class="swipe">
+                        &leftarrow; Swipe &rightarrow;
+                    </div>
+                    <div class="text-with-link">
+                        <div class="title">
+                            <p>Phase One is</p>
+                            <p>free & open</p>
+                            <p>daily</p>
+                        </div>
+                        <div class="link">
+                            <a href="#">Plan your visit</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <section id="entrances-mobile">
@@ -1074,12 +1133,26 @@
         </section>
 
         <footer class="footer-mobile">
-            <div id="donate">
+            <div class="rotateWrapper">
                 <div id="coin-wrapper">
-                    <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" loop playsinline height="200" id="coin"></video>
+                    <video src="https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4" autoplay
+                        loop playsinline height="200" id="coin"></video>
                 </div>
-                <div class="rotating-text" id="donate-text">
-                    CLICK HERE TO DONATE TODAY
+                <div class="rotating-text">
+                    <svg viewBox="0 0 100 100" width="100" height="100">
+                        <defs>
+                            <path id="circle" d="
+                              M 50, 50
+                              m -37, 0
+                              a 37,37 0 1,1 74,0
+                              a 37,37 0 1,1 -74,0" />
+                        </defs>
+                        <text font-size="17">
+                            <textPath xlink:href="#circle">
+                                CLICK HERE TO DONATE TODAY
+                            </textPath>
+                        </text>
+                    </svg>
                 </div>
             </div>
             <div class="footer-text" id="contact-info">

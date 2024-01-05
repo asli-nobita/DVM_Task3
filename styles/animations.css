@@ -25,13 +25,12 @@
         }
     }
 
-    /* video hover effect */
-    @keyframes playVideo {
+    @keyframes rotate {
         from {
-            opacity: 0;
+            transform: rotate(0);
         }
         to {
-            opacity: 1;
+            transform: rotate(360deg);
         }
     }
 

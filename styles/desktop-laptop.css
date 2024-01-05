@@ -56,6 +56,11 @@
         transition: transform 50ms linear;
     }
 
+    .linkHovered {
+        transform: scale(1.05);
+        transition: 50ms ease;
+    }
+
     #header-large {
         font-size: 20px;
         display: block;
@@ -126,6 +131,12 @@
         transition: 0.2s ease;
     }
 
+    #donate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .btn {
         background: transparent;
         border-radius: 2rem;
@@ -149,10 +160,10 @@
     #lang-options {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin-top: 0.5rem;
         font-size: 1rem;
-        width: 100%;
+        width: 100% !important;
     }
 
     #lang-options a {
@@ -533,7 +544,7 @@
 
     .animationFade {
         animation: fadeIn 1.2s;
-        animation-delay: calc(var(--order) * 50ms);
+        animation-delay: calc(var(--order) * 100ms);
     }
 
     #heading {
@@ -757,7 +768,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         place-items: center;
-        min-height: 40vh;
+        min-height: 80vh;
         column-gap: 5rem;
 
         color: white;
@@ -778,7 +789,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 7.5em;
+        /* gap: 7.5em; */
         height: 100%;
     }
 
@@ -788,31 +799,43 @@
         gap: 2rem;
     }
 
-    #donate-text {
-        color: white;
+    .rotateWrapper {
+        height: 250px;
+        width: auto;
         position: relative;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    }
+
+    .rotating-text {
+        width: 100%;
+        height: 100%;
+    }
+
+    .rotating-text svg {
+        position: absolute;
+        top: 0; left: 0;
+        fill: currentColor;
+        height: auto;
+        /* max-width: 100vmin; */
+        transform-origin: center;
+        width: 100%;
+        z-index: 10;
+        animation: rotate 20s linear infinite;
     }
 
     #donate-video {
+        top: 18px;
+        left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         width: 180px;
         height: 180px;
-        /* background: url("https://railpark.org/static/donate-coin-155288ee7d4bbd60b76226c03685d2b4.mp4"); */
-        background-size: cover;
         border-radius: 50%;
     }
 
-    #rotating-text span {
-        position: absolute;
-        left: 50%;
-        font-size: 2rem;
-        transform-origin: 0 100px;
+    #donate-video video {
+        object-position: center center;
     }
 
     #socials {

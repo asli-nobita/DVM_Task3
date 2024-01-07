@@ -841,6 +841,7 @@
         justify-content: space-between;
         /* gap: 7.5em; */
         height: 100%;
+        width: auto;
     }
 
     .footer-column {
@@ -875,7 +876,7 @@
     #donate-video {
         top: 18px;
         left: 15px;
-        display: flex;
+        /* display: flex; */
         justify-content: center;
         align-items: center;
         position: absolute;

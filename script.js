@@ -146,14 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         observer.observe(largeText);
 
-        document.addEventListener('mouseover', e => {
-            if (e.target.tagName.toLowerCase() === 'a' || e.target.tagName.toLowerCase() === 'button') {
-                cursor.style.transform = 'scale(1.5)';
-            } else {
-                cursor.style.transform = 'scale(1)';
-            }
-        })
-
     }
 
     // SCRIPT FOR SMALL SCREENS //

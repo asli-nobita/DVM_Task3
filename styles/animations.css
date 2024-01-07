@@ -34,4 +34,15 @@
         }
     }
 
+    @keyframes fadeInRight {
+        from {
+            opacity: 0.2;
+            transform: translateX(-1rem);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
 }

@@ -88,24 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
             eventImg.style.transform = 'translateY(0)';
         });
 
-        let i = 0;
-        function next() {
-            carouselItems[i + 1].style.display = 'flex';
-            carouselItems[i].style.display = 'none';
-            i++;
-        };
-
-        function prev() {
-            if (i >= 1) {
-                carouselItems[i - 1].style.display = 'flex';
-                carouselItems[i].style.display = 'none';
-            } else {
-                i = carouselItems.length - 1;
-                prev();
-            }
-            i--;
-        };
-
         const videoText = document.querySelector('#video-hover');
         const videoOnHover = document.querySelector('#video-hover > video');
 

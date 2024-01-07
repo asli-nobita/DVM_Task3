@@ -50,8 +50,8 @@
     }
 
     .customCursor {
-        height: 24px;
-        width: 24px;
+        height: 28px;
+        width: 28px;
         z-index: 9999;
         position: fixed;
         top: 0; left: 0;

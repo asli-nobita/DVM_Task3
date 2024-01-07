@@ -63,8 +63,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         mediaContainers.forEach(element => {
-            element.addEventListener('mouseover', () => {
+            element.addEventListener('mouseenter', () => {
                 playVideo(element.querySelector('video'));
+            })
+            element.addEventListener('mouseleave', () => {
+                pauseVideo(element.querySelector('video'));
+            })
+        })
+
+        imageContainers.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                playVideo(element.querySelector('video'));
+            })
+            element.addEventListener('mouseleave', () => {
+                pauseVideo(element.querySelector('video'));
             })
         })
 
@@ -102,6 +114,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 moveVideo(e, videoOnHover);
             });
         });
+
+        videoText.addEventListener('mouseenter', () => {
+            playVideo(videoOnHover);
+        })
+
+        videoText.addEventListener('mouseleave', () => {
+            pauseVideo(videoOnHover)
+        })
 
         burgerIcon.addEventListener('click', () => {
             menu.classList.add('show');
@@ -201,6 +221,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const playVideo = (video) => {
         video.play();
+    }
+
+    const pauseVideo = (video) => {
+        video.pause();
+        video.currentTime = 0;
     }
 
     const cursor = document.querySelector('.customCursor');

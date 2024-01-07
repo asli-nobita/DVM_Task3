@@ -148,7 +148,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.addEventListener('mouseover', e => {
             if (e.target.tagName.toLowerCase() === 'a' || e.target.tagName.toLowerCase() === 'button') {
-                cursor.classList.toggle('linkHovered');
+                cursor.style.transform = 'scale(1.5)';
+            } else {
+                cursor.style.transform = 'scale(1)';
             }
         })
 

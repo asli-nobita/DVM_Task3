@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
 </head>
 
@@ -219,8 +218,8 @@
                 <h1>The Rail</h1>
                 <h1>Park</h1>
             </div>
-            <div class="carousel-container">
-                <div id="left-btn" onclick="prev">
+            <div class="carousel-container" data-carousel>
+                <div id="left-btn" data-carousel-btn="prev">
                     <svg width="54" height="13" viewBox="0 0 54 13" fill="#131313" xmlns="http://www.w3.org/2000/svg"
                         style="transform:rotate(180deg)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -228,31 +227,44 @@
                         </path>
                     </svg>
                 </div>
-                <div id="carousel-1" class="carousel">
-                    <div class="carousel-text">
-                        <div>
-                            <p>Roots of the Rail Park End-of-Year Fundraiser</p>
+                <ul class="carousel-slides" data-slides>
+                    <li id="slide-1" class="slide" data-active>
+                        <div class="carousel-text">
+                            <div>
+                                <p>Roots of the Rail Park End-of-Year Fundraiser</p>
+                            </div>
+                            <div><a href="#">Make a donation today <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span></a></div>
                         </div>
-                        <div><a href="#">Make a donation today <span class="material-symbols-outlined">
-                                    arrow_forward
-                                </span></a></div>
-                    </div>
-                    <img src="https://images.prismic.io/railpark/e2aa6a85-3e69-494d-bb1b-6ed07decaf3c_RotRP_KindfulCampaignHeader_approved.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593"
-                        alt="banner" class="carousel-img">
-                </div>
-                <div id="carousel-2" class="carousel">
-                    <div class="carousel-text">
-                        <div>
-                            <p>Phase One is free & open daily</p>
+                        <img src="https://images.prismic.io/railpark/e2aa6a85-3e69-494d-bb1b-6ed07decaf3c_RotRP_KindfulCampaignHeader_approved.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593"
+                            alt="carousel-img-1" class="carousel-img">
+                    </li>
+                    <li id="slide-2" class="slide">
+                        <div class="carousel-text">
+                            <div>
+                                <p>Phase One is free & open daily</p>
+                            </div>
+                            <div><a href="#">Plan your visit <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span></a></div>
                         </div>
-                        <div><a href="#">Plan your visit <span class="material-symbols-outlined">
-                                    arrow_forward
-                                </span></a></div>
-                    </div>
-                    <img src="https://images.prismic.io/railpark/b75ee5d3-664e-44d8-975a-b739140bf61d_landing-page-header-phase-1.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=605"
-                        alt="" class="carousel-img">
-                </div>
-                <div id="right-btn" onclick="next">
+                        <img src="https://images.prismic.io/railpark/b75ee5d3-664e-44d8-975a-b739140bf61d_landing-page-header-phase-1.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=605"
+                            alt="carousel-img-2" class="carousel-img">
+                    </li>
+                    <li id="slide-3" class="slide">
+                        <div class="carousel-text">
+                            <div>
+                                <p>Turning historic tracks into an unparalleled park.</p>
+                            </div>
+                            <div><a href="#">See the full vision <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span></a></div>
+                        </div>
+                        <img src="https://images.prismic.io/railpark/0f55920f-6808-48d2-a89a-b99a5ca72ca0_the-cut.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1480&h=1014" alt="carousel-img-3" class="carousel-img" style="width: 80%; height: 100%;">
+                    </li>
+                </ul>
+                <div id="right-btn" data-carousel-btn="next">
                     <svg width="54" height="13" viewBox="0 0 54 13" fill="#131313" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M51.8697 5.99991L47.63 1.33625L48.37 0.663574L53.37 6.16357L53.6757 6.49991L53.37 6.83625L48.37 12.3362L47.63 11.6636L51.8697 6.99991H-1.14441e-05V5.99991H51.8697Z">
@@ -628,9 +640,9 @@
                                 <defs>
                                     <path id="circle" d="
                                         M 50, 50
-                                        m -37, 0
-                                        a 37,37 0 1,1 74,0
-                                        a 37,37 0 1,1 -74,0" />
+                                        m -39, 0
+                                        a 39,39 0 1,1 79,0
+                                        a 39,39 0 1,1 -79,0" />
                                 </defs>
                                 <text font-size="17">
                                     <textPath xlink:href="#circle">

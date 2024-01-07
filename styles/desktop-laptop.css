@@ -61,6 +61,12 @@
         transition: 50ms ease;
     }
 
+    .desktop {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
     #header-large {
         font-size: 20px;
         display: block;
@@ -79,7 +85,6 @@
         justify-content: space-between;
         width: 100%;
         z-index: 100;
-        opacity: 0.95;
         transition: 0.1s;
         position: fixed;
         top: 0;
@@ -190,17 +195,16 @@
 
     .show {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
-        height: 100vh;
+        left: 0;
+        height: 100%;
         width: 100%;
         z-index: 100;
         font-size: 2rem;
         overflow-y: auto;
-    }
-
-    .show * {
-        animation: fadeIn 100ms;
+        transition: 0.2s;
+        padding-bottom: 30%;
     }
 
     #menu-navbar {
@@ -208,6 +212,8 @@
         justify-content: space-between;
         padding: 0 var(--menu-padding) 2rem;
         border-bottom: 1px solid grey;
+        position: sticky;
+        top: 0;
     }
 
     #menu-donate-btn {
@@ -248,6 +254,7 @@
 
     .search-box input:focus {
         opacity: 0.5;
+        outline: none;
         transition: 0.2s ease;
     }
 
@@ -349,7 +356,7 @@
         margin-left: calc(8.33% + 2rem);
         line-height: 0.9;
         z-index: -1;
-        /* position: absolute; */
+        margin-top: -2.5rem;
         animation: fadeIn 1s;
     }
 
@@ -359,13 +366,40 @@
         align-items: center;
         gap: 2rem;
         padding: 0 5% 2rem;
+        position: relative;
+        width: 100vw;
+        margin-top: 2.5%;
+        height: calc(20rem + 0.5vh);
     }
 
-    .carousel {
+    .carousel-slides {
+        z-index: -5;
+    }
+
+    .slide {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 -1.2rem;
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        padding-left: calc(3rem + 8.33%);
+        max-width: 90%;
+        margin-top: -5%;
+    }
+
+    .slide[data-active] {
+        opacity: 1;
+        /* animation-delay: 500ms; */
+    }
+
+    .slide[data-active] > .carousel-text {
+        animation: fadeIn 1s;
+    }
+
+    .slide[data-active] > .carousel-img {
+        animation: swingIn 1s;
     }
 
     .carousel-text {
@@ -374,7 +408,6 @@
         flex-direction: column;
         width: 50%;
         gap: 1.5rem;
-        animation: fadeIn 1s;
     }
 
     .carousel-text a {
@@ -389,19 +422,14 @@
 
     .carousel-img {
         max-width: 70%;
-        animation: swingIn 1s;
-        transform-origin: top left;
+        transform-origin: left;
     }
     
     .carousel-img img {
         height: 100%;
+        /* width: 100%; */
         object-fit: cover;
         object-position: center;
-    }
-
-    /* styling for all the carousels */
-    #carousel-2 {
-        display: none;
     }
 
     #left-btn, #right-btn {
@@ -596,10 +624,10 @@
 
     .parallax > .image-container {
         position: relative;
-        width: 100%;
+        /* width: 100%; */
     }
 
-    .parallax > .image-container > img {
+    .image-container > img {
         max-height: 100%;
         max-width: 100%;
         object-fit: cover;
@@ -624,13 +652,19 @@
     }
 
     #viaduct > .image-container {
-        grid-area: 1/1/3/5;
+        grid-column: 1/5;
+        width: 432px;
+        height: 540px;
     }
 
     #cut {
+        margin-top: -30%;
         display: flex;
         flex-direction: column;
-        grid-area: 2/8/4/-1;
+        grid-row: 2/4;
+        grid-column: 8/13;
+        height: 440px;
+        width: 546px;
     }
 
     #about {
@@ -643,13 +677,24 @@
         padding: 3rem 0;
     }
 
+    #tunnel {
+        grid-row: 4/5;
+        grid-column: 5/9;
+        display: flex;
+        align-items: center;
+    }
+
     #tunnel > .image-container {
+        grid-row: 4/5;
         grid-column: 5/7;
-        grid-area: 4/4/5/7;
+        width: 204px;
+        height: 255px;
     }
 
     #tunnel > .image-text {
-        grid-area: 4/7/5/9;
+        grid-row: 4/5;
+        grid-column: 7/9;
+        /* grid-area: 4/7/5/9; */
         margin-top: auto;
     }
 
@@ -693,6 +738,8 @@
 
     #event-text h2 {
         font-weight: 500;
+        font-size: calc(3rem + 0.5vw);
+        margin-top: 5%;
     }
 
     #event-details {

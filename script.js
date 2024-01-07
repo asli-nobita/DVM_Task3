@@ -30,6 +30,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const largeText = document.querySelector('#large-text');
 
+        const buttons = document.querySelectorAll("[data-carousel-btn]");
+
+        buttons.forEach(button => {
+            button.addEventListener('click', ()=>{
+                const offset = button.dataset.carouselButton === 'next' ? 1 : -1;
+                const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
+
+                const activeSlide = slides.querySelector("[data-active]");
+                let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+
+                if(newIndex < 0) newIndex = slides.children.length - 1;
+                if(newIndex >= slides.children.length) newIndex = 0;
+
+                slides.children[newIndex].dataset.active = true;
+                delete activeSlide.dataset.active;
+            })
+        })
+
         window.addEventListener('scroll', () => {
             let prevPos = window.scrollY;
             window.addEventListener('scroll', () => {
@@ -69,24 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
             link.style.color = 'inherit';
             eventImg.style.transform = 'translateY(0)';
         });
-
-        let i = 0;
-        function next() {
-            carouselItems[i + 1].style.display = 'flex';
-            carouselItems[i].style.display = 'none';
-            i++;
-        };
-
-        function prev() {
-            if (i >= 1) {
-                carouselItems[i - 1].style.display = 'flex';
-                carouselItems[i].style.display = 'none';
-            } else {
-                i = carouselItems.length - 1;
-                prev();
-            }
-            i--;
-        };
 
         const videoText = document.querySelector('#video-hover');
         const videoOnHover = document.querySelector('#video-hover > video');

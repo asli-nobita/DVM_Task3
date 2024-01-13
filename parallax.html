@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .status-bar {
+            position: sticky;
+            top: 0;
+            height: 10px;
+            background-color: lightgreen;
+            z-index: 100;
+            transform: scale(0,1);
+            animation: status 0.1s linear;
+            animation-timeline: scroll();
+            transform-origin: left;
+        }
+        @keyframes status {
+            to {
+                transform: scale(1,1);
+            }
+        }
+        .parallax-item {
+            height: 100vh;
+            width: auto;
+            object-fit: cover;
+            object-position: center center;
+        }
+        .parallax-item:last-child {
+            margin-left: 100%;
+            /* margin-top: -25%; */
+        }
+        .translate-animation {
+            animation: translate 0.1s linear;
+            animation-timeline: scroll();
+        }
+        @keyframes translate {
+            to {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="status-bar">
+    </div>
+    <div class="parallax-container">
+        <div class="parallax-item" data-rate="1">
+            <img src="https://images.unsplash.com/photo-1704589148269-dbd0e200e69f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat rerum quod, eaque nobis, molestiae explicabo alias atque mollitia recusandae dolores odit expedita! Consequuntur tempore aperiam culpa repellendus adipisci, odio unde?
+        </div>
+        <div class="parallax-item item-2" data-rate="1.5">
+            <img src="https://images.unsplash.com/photo-1682687221323-6ce2dbc803ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyMXx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div style="padding-bottom: 200rem;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nam perferendis magni nulla minus fugiat libero consectetur, suscipit doloremque quas eveniet itaque, aliquid aliquam doloribus beatae necessitatibus maiores commodi iusto magnam, alias inventore molestiae voluptate vitae amet. Cum accusamus quidem optio? Architecto omnis incidunt dolorem numquam, consequatur vero in iusto suscipit fugiat, saepe praesentium fugit, quaerat eum possimus consequuntur repudiandae natus accusantium! Enim doloremque excepturi culpa facilis fugiat dolor voluptates esse praesentium aspernatur quae! Enim debitis pariatur, quam iste repudiandae ut nesciunt nulla quis magni consequatur nostrum odit ipsum vel facilis provident nihil eaque numquam error similique. Expedita, harum suscipit.
+        </div>
+    </div>
+</body>
+
+<script>
+    const parallaxItem = document.querySelector('.item-2');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle('translate-animation', entry.isIntersecting);
+        })
+    })
+    observer.observe(parallaxItem);
+</script>
+
+</html>

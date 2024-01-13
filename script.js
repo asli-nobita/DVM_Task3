@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const largeText = document.querySelector('#large-text');
 
+        const entrance = document.querySelectorAll('.entrance');
+
         const buttons = document.querySelectorAll("[data-carousel-btn]");
 
         buttons.forEach(button => {
@@ -62,12 +64,26 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        mediaContainers.forEach(element => {
-            element.addEventListener('mouseenter', () => {
+        const playVideo = (video) => {
+            video.play();
+        }
+    
+        const pauseVideo = (video) => {
+            video.pause();
+            video.currentTime = 0;
+        }
+
+        entrance.forEach(element => {
+            var arrowIcon = element.querySelector('.large-icon');
+            element.addEventListener('mouseover', () => {
                 playVideo(element.querySelector('video'));
+                arrowIcon.style.transform = `translateX(${arrowIcon.dataset.direction*2.5}%)`;
+                arrowIcon.style.color = 'var(--link-color)' ;
             })
-            element.addEventListener('mouseleave', () => {
+            element.addEventListener('mouseout', () => {
                 pauseVideo(element.querySelector('video'));
+                arrowIcon.style.transform = 'translateX(0)';
+                arrowIcon.style.color = 'inherit' ;
             })
         })
 
@@ -101,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         const videoText = document.querySelector('#video-hover');
-        const videoOnHover = document.querySelector('#video-hover > video');
+        const videoOnHover = document.querySelector('.video-hover > video');
 
         const moveVideo = (e, video) => {
             let height = video.style.height;
@@ -145,6 +161,18 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
         observer.observe(largeText);
+
+        const parallaxObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('translate-animation', entry.isIntersecting);
+            })
+        })
+
+        const parallaxItems = document.querySelectorAll('.parallax-item');
+        parallaxItems.forEach(item => {
+            parallaxObserver.observe(item);
+        })
+        parallaxObserver.observe(document.querySelector('.carousel-wrapper'));
 
     }
 
@@ -198,29 +226,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // COMMON //
-
-    window.addEventListener('scroll', () => {
-        if (parallaxContainer.offsetTop === 20) {
-            parallax();
-        }
-    })
-
-    function parallax() {
-        window.addEventListener('scroll', () => {
-            document.querySelectorAll('.image-container').forEach((element) => {
-                element.style.transform = `translateY(${window.scrollY}px)`;
-            });
-        });
-    }
-
-    const playVideo = (video) => {
-        video.play();
-    }
-
-    const pauseVideo = (video) => {
-        video.pause();
-        video.currentTime = 0;
-    }
 
     const cursor = document.querySelector('.customCursor');
     document.addEventListener('mousemove', (e)=>{

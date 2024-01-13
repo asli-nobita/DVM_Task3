@@ -25,12 +25,8 @@
             <nav class="navbar" id="nav-large">
                 <div id="burger-menu">
                     <div class="burger-menu-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
-                            viewBox="0 0 50 50">
-                            <path
-                                d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z">
-                            </path>
-                        </svg>
+                        <div class="bar bar-1"></div>
+                        <div class="bar bar-2"></div>
                     </div>
                 </div>
                 <div id="nav-options">
@@ -348,7 +344,7 @@
                     <p>Visiting the</p>
                     <p>Rail Park</p>
                 </div>
-                <div id="noble-st">
+                <div id="noble-st" class="entrance">
                     <div class="media-container">
                         <img src="https://images.prismic.io/railpark/28507bd7-e937-4074-87b0-95751194f4c1_noble-entrance.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1946&h=1096"
                             alt="">
@@ -359,7 +355,7 @@
                     </div>
                     <div class="info">
                         <div class="title">
-                            <div id="left-arrow" class="large-icon">
+                            <div id="left-arrow" class="large-icon" data-direction="-1">
                                 <span class="material-symbols-outlined">
                                     arrow_back
                                 </span>
@@ -381,10 +377,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="callowhill-st">
+                <div id="callowhill-st" class="entrance">
                     <div class="info">
                         <div class="title">
-                            <div id="right-arrow" class="large-icon">
+                            <div id="right-arrow" class="large-icon" data-direction="1">
                                 <span class="material-symbols-outlined">
                                     arrow_forward
                                 </span>
@@ -432,7 +428,7 @@
             <section class="parallax-container">
                 <div class="parallax">
                     <div id="viaduct" class="image-grid-item">
-                        <div class="image-container">
+                        <div class="image-container parallax-item">
                             <img
                                 src="https://images.prismic.io/railpark/e9874d84-0be0-4864-80de-dfeab4d76be7_the-viaduct.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=689&h=861">
                             <video
@@ -449,7 +445,7 @@
                         </div>
                     </div>
                     <div id="cut" class="image-grid-item">
-                        <div class="image-container">
+                        <div class="image-container parallax-item">
                             <img src="https://images.prismic.io/railpark/d7009ba0-a9fb-4192-96c3-da520075023d_the-cut.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=689&h=551"
                                 alt="">
                             <video
@@ -480,7 +476,7 @@
                         </div>
                     </div>
                     <div id="tunnel" class="image-grid-item">
-                        <div class="image-container">
+                        <div class="image-container parallax-item">
                             <img
                                 src="https://images.prismic.io/railpark/ebcfced6-c746-43c0-91b8-ba8b64835cea_the-tunnel.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=594&h=743">
                             <video
@@ -936,7 +932,7 @@
             <div class="hero">
                 <p>The Rail Park</p>
             </div>
-            <div class="carousel-wrapper">
+            <div class="carousel-wrapper parallax-item">
                 <div class="slide" id="slide1">
                     <div class="hero-img image-container">
                         <img src="https://images.prismic.io/railpark/e2aa6a85-3e69-494d-bb1b-6ed07decaf3c_RotRP_KindfulCampaignHeader_approved.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=1075&h=593"

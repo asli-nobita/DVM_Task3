@@ -6,7 +6,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        cursor: none !important;
+        /* cursor: none !important; */
     }
 
     :root {
@@ -24,7 +24,7 @@
         background-color: var(--color-off-white);
         min-height: 100vh;
         overflow-x: hidden;
-        /* cursor: auto; */
+        cursor: auto;
     }
 
     a {
@@ -50,8 +50,8 @@
         z-index: 9999;
         pointer-events: none;
         position: fixed;
-        top: 0; left: 0;
-        background: url('D:/DVM Recruitments/Task3/leaf_340817.png');
+        top: -100%; left: -100%;
+        background: url('/assets/leaf_340817.png');
         background-position: center;
         background-size: cover;
         transition: transform 50ms linear;
@@ -90,12 +90,12 @@
         position: fixed;
         top: 0;
         font-size: 1.5rem;
-        padding: 0 8.33%;
+        padding: 1.5rem calc(2vw + 8.33%);
     }
 
-    #nav-large div {
+    /* #nav-large div {
         width: fit-content;
-    }
+    } */
 
     #nav-large a {
         transition: 0.1s ease;
@@ -107,17 +107,42 @@
     }
 
     .burger-menu-icon {
-        transform: scale(0.4);
+        /* transform: scale(0.4); */
+        width: 3rem !important;
+        height: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .burger-menu-icon:hover > .bar {
+        border: 1px solid var(--link-color);
+        background-color: var(--link-color);
         transition: 0.2s ease;
     }
 
-    .burger-menu-icon:hover {
-        fill: var(--link-color);
-        transition: 0.2s ease;
+    .bar {
+        height: 1px;
+        width: 100%;
+        border: 1px solid black;
+        background-color: black;
+        transition: all 0.2s ease;
+    }
+
+    .bar-1-close {
+        transform: rotate(45deg) translateY(10px);
+        transition: 0.2s;
+    }
+
+    .bar-2-close {
+        transform: rotate(-45deg) translateY(-10px);
+        transition: 0.2s;
     }
 
     .nav-hide {
-        opacity: 0;
+        transform: translateY(-100%);
         transition: 0.1s;
     }
 
@@ -380,7 +405,7 @@
     .slide {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         margin: 0 -1.2rem;
         position: absolute;
         inset: 0;
@@ -404,15 +429,17 @@
     }
 
     .carousel-text {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
         display: flex;
         flex-direction: column;
         width: 50%;
         gap: 1.5rem;
+        margin-bottom: 5%;
     }
 
     .carousel-text a {
         color: var(--link-color);
+        font-size: 1.75rem;
         transition: 0.1s ease;
     }
 
@@ -481,9 +508,9 @@
         transition: all 0.4s ease;
     }
 
-    .media-container:hover video{
+    .entrance:hover video{
         z-index: 100;
-        transition: all 0.4s ease;
+        transition: opacity 0.4s ease;
     }
 
     .heading {
@@ -554,6 +581,7 @@
 
     .large-icon {
         margin: 0 2rem 2rem 1rem;
+        transition: all 0.2s;
     }
 
     .large-icon span {
@@ -589,6 +617,9 @@
 
     #video-hover {
         position: relative;
+        z-index: -1;
+        /* height: 300px;
+        width: auto; */
     }
 
     #video-hover video {
@@ -622,6 +653,11 @@
         column-gap: 1.5rem;
         grid-template-rows: auto;
         margin-bottom: 5rem;
+    }
+
+    .translate-animation {
+        animation: translate 0.1s linear;
+        animation-timeline: scroll();
     }
 
     .parallax > .image-container {
@@ -677,7 +713,7 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding: 3rem 0;
+        padding: 4rem 0;
     }
 
     #tunnel {
@@ -823,7 +859,7 @@
 
         color: white;
         background-color: var(--dark-bg);
-        padding: 4rem 3rem;
+        padding: 4rem 1rem;
     }
 
     #footer-grid h2 {
